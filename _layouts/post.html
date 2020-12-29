@@ -6,9 +6,9 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   <div>
-    <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
+    <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%e %B %Y" }}</p>
     {% if page.last_modified_at %}
-    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%-d %b %Y" }})</p>
     {% endif %}
     <div class="post-tags">
       {% if post %}
@@ -31,9 +31,9 @@ layout: default
     <p><span class="share-box">Share:</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a></p>
   </div>
 
-  <div class="date">
+  <!--<div class="date">
     Written on {{ page.date | date: "%e %B %Y" }}
-  </div>
+  </div>-->
 
   {% include disqus.html %}
 </article>

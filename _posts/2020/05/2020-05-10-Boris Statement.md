@@ -7,7 +7,7 @@ categories: Politics
 
 Before I start, you can read the full transcript for yourself by clicking [here](https://www.gov.uk/government/speeches/pm-address-to-the-nation-on-coronavirus-10-may-2020) or you can watch it below.
 
-https://www.youtube.com/watch?v=bjvRhrJqNHI&feature=youtu.be
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bjvRhrJqNHI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The Reduction of Lockdown
 -------------------------

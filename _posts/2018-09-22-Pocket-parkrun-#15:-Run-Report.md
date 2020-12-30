@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pocket parkrun #15: Run Report
+title: "Pocket parkrun #15: Run Report"
 date: 2018-09-22 09:00 +0100
 categories: parkrun
 ---

@@ -5,7 +5,7 @@ layout: default
 <article class="page">
 
   <h1>{{ page.title }}</h1>
-
+  <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%-d %b %Y" }})</p>
   <div class="entry">
     {{ content }}
   </div>

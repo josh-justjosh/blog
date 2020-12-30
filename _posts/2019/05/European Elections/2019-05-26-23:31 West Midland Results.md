@@ -8,7 +8,7 @@ categories: Politics
 MEPs
 
 *   Rupert Lowe - Brexit Party
-*   Martin Daubney - Brexit PArty
+*   Martin Daubney - Brexit Party
 *   Neena Gill - Labour
 *   Phil Bennion - Liberal Democrats
 *   Andrew Kerr - Brexit Party

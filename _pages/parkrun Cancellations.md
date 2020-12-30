@@ -1,6 +1,7 @@
 ---
 layout: page
 title: parkrun Cancellations
+permalink: /parkrun-Cancellations/
 date: 2019-08-20 10:39 +0100
 last_modified_at: 2020-12-30 20:23 +0000
 category: parkrun

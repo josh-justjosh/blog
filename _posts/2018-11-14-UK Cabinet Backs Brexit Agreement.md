@@ -13,7 +13,7 @@ Theresa May's cabinet has agreed to back the Brexit agreement after 5 hours of i
 
 *   16:25 13/11/18 - A source confirms to BBC Political Editor Laura Kuenssberg that there is agreement on the text of a 'divorce deal'
 
-> Source confirms divorce deal text agreed at technical level, Cabinet to meet early afternoon tomorrow...might be official confirmation soon [November 13, 2018](https://twitter.com/bbclaurak/status/1062380859108589573?ref_src=twsrc%5Etfw) Laura Kuenssberg - @bbclaurak on Twitter
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Source confirms divorce deal text agreed at technical level, Cabinet to meet early afternoon tomorrow...might be official confirmation soon</p>&mdash; Laura Kuenssberg (@bbclaurak) <a href="https://twitter.com/bbclaurak/status/1062380859108589573?ref_src=twsrc%5Etfw">November 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 *   17:01 -It is confirmed that there will be a meeting of the UK cabinet at 14:00 on 14/11
 *   12:00 14/11 - PMQs begin in the House of Commons
@@ -23,4 +23,4 @@ Theresa May's cabinet has agreed to back the Brexit agreement after 5 hours of i
 *   20:10 (21:10 Brussels time) - Michel Barnier (EU Chief Negotiator) gives a press conference in Brussels
 *   20:22 - Decisive progress announced
 
-> I consider that decisive progress had been made Michel Barnier
+> I consider that decisive progress had been made - Michel Barnier

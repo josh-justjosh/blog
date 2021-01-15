@@ -86,7 +86,7 @@ plugins:
   - jekyll-archives
   
 jekyll-archives:
-  enabled: []
+  enabled: all
   layout: archive
   permalinks:
     year: '/:year/'

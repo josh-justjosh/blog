@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /2019/
-title: 2019 Archive
+permalink: /archive/
+title: Archive
 ---
 
 

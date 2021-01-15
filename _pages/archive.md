@@ -12,11 +12,11 @@ title: Archive
       {% unless post.next %}
       <ul class="this">
           {% else %}
-          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-          {% if year != nyear %}
+          {% capture month %}{{ post.date | date: '%B %Y' }}{% endcapture %}
+          {% capture nmonth %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
+          {% if month != nmonth %}
       </ul>
-      <h3>{{ post.date | date: '%Y' }}</h3>
+      <h3>{{ post.date | date: '%B %Y' }}</h3>
       <ul class="past">
           {% endif %}
           {% endunless %}

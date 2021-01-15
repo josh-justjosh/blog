@@ -83,28 +83,6 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-archives
-  
-jekyll-archives:
-  enabled: all
-  enabled:
-    - categories
-  enabled:
-    - year
-    - month
-    - tags
-  layouts:
-    year: year-archive
-    month: month-archive
-    day: day-archive
-    category: category-archive
-    tag: tag-archive
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
 
 include: ['_pages']
 

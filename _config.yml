@@ -87,6 +87,12 @@ plugins:
   
 jekyll-archives:
   enabled: all
+  enabled:
+    - categories
+  enabled:
+    - year
+    - month
+    - tags
   layout: archive
   permalinks:
     year: '/:year/'

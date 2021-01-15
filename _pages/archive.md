@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /archive/
-title: Archive
+title: Posts Archive
 ---
 
 

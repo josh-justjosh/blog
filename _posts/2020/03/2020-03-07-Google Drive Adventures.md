@@ -28,13 +28,13 @@ I wondered what was going on. Surely I must have just freed up 7.5GB? So I click
 
 > **Clear Google Drive space and increase storage**
 > 
-> <a href="https://support.google.com/" style="text-align:right;">- support.google.com</a>
+> <p style="text-align:right;">- <a href="https://support.google.com/">support.google.com</a></p>
 
 I thought I must be in the right place, and sure enough when I clicked on 'Items that take up space' it gave me the answer:
 
 > Items in your bin
 > 
-> <a href="https://support.google.com/" style="text-align:right;">- support.google.com</a>
+> <p style="text-align:right;">- <a href="https://support.google.com/">support.google.com</a></p>
 
 Mildly frustrated that I han't thought of that before, I located my bin and clicked 'Empty Bin'. Things disapeared and it told me that everything was gone.
 

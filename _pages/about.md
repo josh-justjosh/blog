@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-last_modified_at: 2021-02-07 14:11 +0000
+last_modified_at: 2021-02-07 14:11 +0100
 ---
 
 My name is Josh Brunning and I'm a Human who Does Stuff on The Internet.

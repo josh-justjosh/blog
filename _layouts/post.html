@@ -8,7 +8,7 @@ layout: default
   <div>
     <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%e %B %Y" }}</p>
     {% if page.last_modified_at %}
-    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">Last Updated: {{ page.last_modified_at | date: "%H:%M %e %B %Y (%Z)" }}</p>
+    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">Last Updated: {{ page.last_modified_at | date: "%H:%M %e %B %Y" }}</p>
     {% endif %}
     <div class="post-tags">
       {% if post %}

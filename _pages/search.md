@@ -2,6 +2,7 @@
 layout: page
 title: Search
 permalink: /search/
+date: 2021-12-31
 ---
 
 <div id="search-container">

@@ -8,7 +8,7 @@ If, like me you may use your Google Drive space for almost everything, you may f
 
 > You're running out of space! You've used 18.2GB of 19GB
 > 
-> My Unhappy Google Drive
+> <p style="text-align:right;">- My Unhappy Google Drive</p>
 
 I wondered what could be taking up all that space. The first thing I found was old computer backups. I use both Google Drive and OneDrive, so I was reasonably sure I wouldn't have lost any data when switching to my new laptop. The first thing to delete.
 
@@ -22,19 +22,19 @@ Whoops, didn't realsise I had 7.5 GB of stuff in my downloads, but even worse: i
 
 > You're running out of space! You've used 18.2GB of 19GB
 > 
-> My Still Unhappy Google Drive
+> <p style="text-align:right;">- My Still Unhappy Google Drive</p>
 
 I wondered what was going on. Surely I must have just freed up 7.5GB? So I clicked on the [learn more link](https://support.google.com/drive/answer/6374270?hl=en-GB). That took me to a google help page called:
 
 > **Clear Google Drive space and increase storage**
 > 
-> [support.google.com](https://support.google.com/)
+> <p style="text-align:right;">- [support.google.com](https://support.google.com/)</p>
 
 I thought I must be in the right place, and sure enough when I clicked on 'Items that take up space' it gave me the answer:
 
 > Items in your bin
 > 
-> [support.google.com](https://support.google.com/)
+> <p style="text-align:right;">- [support.google.com](https://support.google.com/)</p>
 
 Mildly frustrated that I han't thought of that before, I located my bin and clicked 'Empty Bin'. Things disapeared and it told me that everything was gone.
 
@@ -44,12 +44,12 @@ I was excited to see how much space I now had.
 
 > You're running out of space! You've used 17GB of 19GB
 > 
-> My Slightly Less Unhappy, but Still Quite Unhappy Google Drive
+> <p style="text-align:right;">- My Slightly Less Unhappy, but Still Quite Unhappy Google Drive</p>
 
 Dissapointingly, more files had appeared, so I clicked 'empty bin' again and refreshed the page - 16GB used. Repeating the click and refresh process about a dozen more times I ended up with:
 
 > 4.7GB of 19GB used
 > 
-> My Happy Google Drive
+> <p style="text-align:right;">- My Happy Google Drive</p>
 
 Just goes to show that emptying your bin can never be a bad thing.

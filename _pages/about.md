@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-last_modified_at: 2021-02-07 14:11 +0100
+last_modified_at: 2021-02-07 14:11 +0000
 ---
 
 My name is Josh Brunning and I'm a Human who Does Stuff on The Internet.
@@ -20,4 +20,4 @@ And some of my past projects include:
 
 
 
-This site is hosted on [GitHub Pages](https://pages.github.com/) and is based on the [Reverie](https://reverie-jekyll.netlify.app/) [Jekyll](https://jekyllrb.com/) theme.
+This site is hosted on [GitHub Pages](https://pages.github.com/) and is based on the [Reverie](https://reverie-jekyll.netlify.app/about/) [Jekyll](https://jekyllrb.com/) theme.

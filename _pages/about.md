@@ -10,7 +10,8 @@ My name is Josh Brunning and I'm a Human who Does Stuff on The Internet.
 My projects currently include:
 
 * This Site
-* Being a Sound, Light and Live Event Technology student at Derby Uni 
+* Being a Sound, Light and Live Event Technology student at Derby Uni
+* Vision Mixing [St Werburgh's](https://stwderby.org/) live services here in Derby
 
 And some of my past projects include:
 
@@ -20,4 +21,4 @@ And some of my past projects include:
 
 
 
-This site is hosted on [GitHub Pages](https://pages.github.com/) and is based on the [Reverie](https://reverie-jekyll.netlify.app/about/) [Jekyll](https://jekyllrb.com/) theme.
+This site is hosted on [GitHub Pages](https://pages.github.com/) and is based on the [Reverie](https://reverie-jekyll.netlify.app/about/) [Jekyll](https://jekyllrb.com/) theme. <!--Read more about how this website came to be *here*-->

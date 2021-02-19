@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New Project!"
-date: 2021-02-19 23:29 +0000
+date: 2021-02-19 23:44 +0000
 ---
 
 You may be aware that I'm currently in Derby studying for a degree in Sound, Light and Live Event Technology with the hope of entering the TV industry in the future. It's been a bit weird (to say the least) studying what is meant to be a practical course remotely. So when my Programme Leader asked me if I was around and wanted to do some voluntary tech work  - I jumped at the chance.

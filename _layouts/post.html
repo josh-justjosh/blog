@@ -35,7 +35,7 @@ comments: true
   <!--<div class="date">
     Written on {{ page.date | date: "%e %B %Y" }}
   </div>-->
-  {% if post.comments %}
+  {% if page.comments %}
     {% include disqus.html %}
   {% endif %}
 </article>

@@ -77,6 +77,7 @@ The PM set out four reviews around:
 * [Text of the PM's statement](https://www.gov.uk/government/speeches/pm-statement-to-the-house-of-commons-on-roadmap-for-easing-lockdown-restrictions-in-england-22-february-2021)
 * [The accompanying press release](https://www.gov.uk/government/news/prime-minister-sets-out-roadmap-to-cautiously-ease-lockdown-restrictions)
 * [The 68-page Command Paper setting out all the details](https://www.gov.uk/government/publications/covid-19-response-spring-2021)
+* [My little thread about the implications for parkrun](https://twitter.com/_Josh_justJosh/status/1363952531852902402?s=20)
 
 ------
 

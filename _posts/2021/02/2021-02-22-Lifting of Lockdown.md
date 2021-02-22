@@ -9,7 +9,7 @@ date: 2021-02-22 20:00 +0000
 
 As I write this post the PM is this on his feet in the House of Commons answering questions from MPs. The press release is available [here](https://www.gov.uk/government/news/prime-minister-sets-out-roadmap-to-cautiously-ease-lockdown-restrictions) and the text of his statement is [here](https://www.gov.uk/government/speeches/pm-statement-to-the-house-of-commons-on-roadmap-for-easing-lockdown-restrictions-in-england-22-february-2021) or the video is available below.[^1]
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wtOvj-yjDXA?start=1069" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/wtOvj-yjDXA?start=1069" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Stage 1 - 8 March
 

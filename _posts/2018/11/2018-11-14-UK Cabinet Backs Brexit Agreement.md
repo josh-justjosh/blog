@@ -2,7 +2,8 @@
 layout: post
 title: "UK Cabinet Backs Brexit Agreement"
 date: 2018-11-14 19:30 +0000
-categories: Politics
+categories: post
+tags: Politics
 ---
 
 Theresa May's cabinet has agreed to back the Brexit agreement after 5 hours of intense discussion. The draft agreement [(click to download)](https://ec.europa.eu/commission/sites/beta-political/files/draft_withdrawal_agreement_0.pdf) stretches to 585 pages and has taken 19 months to write and agree with both sides.

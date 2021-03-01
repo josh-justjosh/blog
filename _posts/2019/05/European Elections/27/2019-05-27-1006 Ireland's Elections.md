@@ -2,7 +2,8 @@
 layout: post
 title: "Ireland's Elections"
 date: 2019-05-27 10:06 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 In Ireland this week there were three sets of elections:

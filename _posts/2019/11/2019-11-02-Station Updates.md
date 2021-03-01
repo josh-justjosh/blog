@@ -2,7 +2,8 @@
 layout: post
 title: "The Story of Station Updates"
 date: 2019-11-02 13:47 +0000
-categories: 
+categories: post
+tag: Trains
 ---
 
 In June 2019, I started a project to investigate the Realtime Trains (RTT) api. I used python as that was the language I was most proficient in. It was initially just a small file getting a station's departures and displaying them.

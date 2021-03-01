@@ -2,7 +2,8 @@
 layout: post
 title: "So, What's Just Happened?"
 date: 2019-05-27 11:42 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 Well, in summary: the country is just as divided as it has been since June 2016. Last night we saw Nigel Farage's new Brexit party taking seats from his old party UKIP. The parties that support Bexit recieved about 50% of votes cast, as did those parties that would like to remain in the EU.

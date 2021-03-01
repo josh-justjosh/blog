@@ -3,6 +3,8 @@ layout: post
 title: "What does Boris' statement mean?<br />February 2021 Edition"
 excerpt: "So, here we are again, 10 months after the first edition, <i>What does Boris' statement mean?</i> returns for the roadmap out of Lockdown 3..."
 date: 2021-02-22 20:00 +0000
+category: post
+tags: Politics
 ---
 
 #### This announcement applies to England only

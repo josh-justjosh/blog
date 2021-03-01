@@ -2,7 +2,8 @@
 layout: post
 title: "Final Welsh Result"
 date: 2019-05-26 23:28 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 MEPs are

@@ -2,6 +2,7 @@
 layout: post
 title: "Adventures in Freeing Up Space in My Google Drive"
 date: 2020-03-07 13:48 +0000
+category: post
 ---
 
 If, like me you may use your Google Drive space for almost everything, you may find it fills up from time to time. This happened to me recently with Drive warning me:

@@ -2,7 +2,8 @@
 layout: post
 title: "North West MEPs"
 date: 2019-05-27 00:37 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 *   Claire Fox - Brexit Party

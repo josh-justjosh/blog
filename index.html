@@ -5,9 +5,9 @@ date: 2021-12-31
 
 <div class="posts">
   {% for post in paginator.posts %}
-    <article style="{% if post.categories contains "video" %}background-color: rgba(255,0,0,0.25); {% endif %}padding: 1em;" class="post">
+    <article style="{% if post.categories contains "video" %}background-color: rgba(255,0,0,0.25); {% elsif post.categories contains "live" %}background-color: rgba(255,0,0,0.5); {% endif %}padding: 1em;" class="post">
       <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1 style="margin-top: 0;">{{ post.title }}</h1>
+        <h1 style="margin-top: 0;">{% if post.categories contains "live" %}🔴 I'M LIVE 🔴<br />―――――――<br />{% endif %}{{ post.title }}</h1>
 
         <div>
           <p class="post_date">{{ post.date | date: "%e %B %Y" }}</p>
@@ -18,7 +18,7 @@ date: 2021-12-31
         {{ post.excerpt }}
       </div>
 
-      {% if post.categories contains "video" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
+      {% if post.categories contains "video" or "live" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
     </article>
   {% endfor %}
 

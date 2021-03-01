@@ -2,7 +2,9 @@
 layout: post
 title: "New Year’s Day Extra Statistics!"
 date: 2019-01-03 11:00 +0000
-categories: parkrun
+category: post
+tag: parkrun
+elsewhere: <a href="https://www.parkrun.org.uk/pocket/news/">Pocket parkrun</a>
 ---
 
 This is just a post that I'll keep updated with any interesting statistics I find. If this is your sort of thing, there is a [parkrun stats geeks](https://www.facebook.com/groups/parkrunstatsgeeks/) group that you might find interesting and it's one of the places I've found my info.

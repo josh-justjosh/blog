@@ -5,14 +5,19 @@ date: 2021-12-31
 
 <div class="posts">
   {% for post in paginator.posts %}
-    <article class="post">
+    <article style="
+      {% if post.categories contains "video" %}
+        background-color: rgba(255,0,0,0.25); 
+      {% endif %}
+      padding: 1em 50px 10px;" class="post">
       <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1>{{ post.title }}</h1>
+        <h1 style="margin-top: 0;">{{ post.title }}</h1>
 
         <div>
           <p class="post_date">{{ post.date | date: "%e %B %Y" }}</p>
         </div>
       </a>
+      {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
       <div class="entry">
         {{ post.excerpt }}
       </div>

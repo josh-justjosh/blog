@@ -2,7 +2,8 @@
 layout: post
 title: "What does Boris' statement mean?"
 date: 2020-05-10 20:57 +0100
-categories: Politics
+tags: Politics
+category: post
 ---
 
 Before I start, you can read the full transcript for yourself by clicking [here](https://www.gov.uk/government/speeches/pm-address-to-the-nation-on-coronavirus-10-may-2020) or you can watch it below.

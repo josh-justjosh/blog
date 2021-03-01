@@ -2,7 +2,8 @@
 layout: post
 title: "North East Final Result"
 date: 2019-05-26 22:35 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 The first result is now in and the first UK MEPs are

@@ -2,7 +2,8 @@
 layout: post
 title: "East Midlands MEPs"
 date: 2019-05-26 23:58 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 *   Annunziata Rees-Mogg - Brexit Party

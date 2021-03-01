@@ -2,7 +2,8 @@
 layout: post
 title: "Yorkshire & Humber MEPs"
 date: 2019-05-26 23:41 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 *   John Longworth - Brexit Party

@@ -2,7 +2,8 @@
 layout: post
 title: "Thoughts from Me"
 date: 2019-05-27 01:16 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Notes from me as we approach 1am BST<br><br>We have 2 regions left to declare their MEPs: Scotland &amp; Northern Ireland. Scotland has a few last results to come in but NI doesn&#39;t start counting till the morning under STV</p>&mdash; Josh ☘️ (@_Josh_justJosh) <a href="https://twitter.com/_Josh_justJosh/status/1132801844827348992?ref_src=twsrc%5Etfw">May 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

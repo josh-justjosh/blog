@@ -2,7 +2,8 @@
 layout: post
 title: "Final London Results"
 date: 2019-05-26 23:14 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 *   Irina Von Wiese - Liberal Democrat

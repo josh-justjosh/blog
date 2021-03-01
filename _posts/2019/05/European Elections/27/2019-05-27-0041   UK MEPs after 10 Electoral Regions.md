@@ -2,7 +2,8 @@
 layout: post
 title: "UK MEPs after 10 Electoral Regions"
 date: 2019-05-27 00:41 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 |     **Party**     | **MEPs** | **Change** | **Vote Share** | **Change** |

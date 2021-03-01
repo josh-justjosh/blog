@@ -2,7 +2,8 @@
 layout: post
 title: "Scotland's MEPs"
 date: 2019-05-27 11:11 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 Northern Ireland uses a different electoral system and their results will likely be announced this evening

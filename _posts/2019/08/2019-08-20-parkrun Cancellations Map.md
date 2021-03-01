@@ -2,7 +2,8 @@
 layout: post
 title: "parkrun Cancellations Map"
 date: 2019-08-20 10:39 +0100
-categories: parkrun
+categories: post
+tags: parkrun
 ---
 
 Over the last few months, I've been producing a map showing the cancellations of parkruns for the upcomming weekend. parkrun HQ recently has overhauled the parkrun website and the events map. Doing this has changed the source of the locations of parkruns around the world.

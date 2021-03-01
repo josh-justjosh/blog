@@ -2,7 +2,8 @@
 layout: post
 title: "Midnight Update"
 date: 2019-12-13 00:00 +0000
-categories: Politics
+tag: Politics
+category: post
 ---
 
 Obviously the big news from the last hour was the first Conservative gain in Blyth Valley by 712 votes following a batch recount.

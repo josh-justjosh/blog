@@ -2,7 +2,8 @@
 layout: post
 title: "South East MEPs"
 date: 2019-05-27 00:26 +0100
-categories: Politics
+categories: post
+tag: [Politics, "EU Elections 2019"]
 ---
 
 *   Nigel Farage - Brexit Party

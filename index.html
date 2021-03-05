@@ -18,7 +18,7 @@ date: 2021-12-31
         {{ post.excerpt }}
       </div>
 
-      {% if post.categories contains "video" or "live" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
+      {% if post.categories contains "video" or post.categories contains "live" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
     </article>
   {% endfor %}
 

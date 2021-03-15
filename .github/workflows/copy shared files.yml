@@ -7,13 +7,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  cancel:
+    name: Cancel Previous Runs
     runs-on: ubuntu-latest
     steps:
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.8.0
-        with:
-          access_token: ${{ github.token }}
+      - name: cancel running workflows
+        uses: everphone-gmbh/cancel-previous-workflows@v5
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
   #wait:
     #runs-on: ubuntu-latest
@@ -24,7 +25,7 @@ jobs:
           #time: '300s'
 
   Copy_includes:
-    needs: test
+    needs: cancel
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

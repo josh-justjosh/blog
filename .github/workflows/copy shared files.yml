@@ -6,16 +6,6 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
-jobs:
-  cancel:
-    name: Cancel Previous Runs
-    runs-on: ubuntu-latest
-    steps:
-      - name: cancel running workflows
-        uses: everphone-gmbh/cancel-previous-workflows@v5
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-
   #wait:
     #runs-on: ubuntu-latest
     #steps:
@@ -25,7 +15,7 @@ jobs:
           #time: '300s'
 
   Copy_includes:
-    needs: cancel
+    #needs: wait
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

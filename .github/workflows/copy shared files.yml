@@ -7,6 +7,14 @@ on:
   workflow_dispatch:
 
 jobs:
+  test: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: n1hility/cancel-previous-runs@v2
+      with: 
+        token: ${{ secrets.API_TOKEN_GITHUB }}
+        
   wait:
     runs-on: ubuntu-latest
     steps:
@@ -15,22 +23,22 @@ jobs:
         with:
           time: '300s'
 
-  Copy_includes:
-    needs: wait
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Copy _includes
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.API_TOKEN_GITHUB }}
-          src_path: '/_includes/'
-          dst_owner: 'josh-justjosh'
-          dst_repo_name: 'homepage'
-          dst_path: '/'
+  #Copy_includes:
+    #needs: wait
+    #runs-on: ubuntu-latest
+    #steps:
+     # - uses: actions/checkout@v2
+      #- name: Copy _includes
+      #  uses: andstor/copycat-action@v3
+      #  with:
+      #    personal_token: ${{ secrets.API_TOKEN_GITHUB }}
+       #   src_path: '/_includes/'
+       #   dst_owner: 'josh-justjosh'
+      #    dst_repo_name: 'homepage'
+       #   dst_path: '/'
 
   Copy_sass:
-    needs: Copy_includes
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

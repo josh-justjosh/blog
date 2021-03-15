@@ -14,31 +14,31 @@ jobs:
     - uses: n1hility/cancel-previous-runs@v2
       with: 
         token: ${{ secrets.API_TOKEN_GITHUB }}
-        
-  wait:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Wait 5 minutes before running
-        uses: jakejarvis/wait-action@master
-        with:
-          time: '300s'
 
-  #Copy_includes:
-    #needs: wait
+  #wait:
     #runs-on: ubuntu-latest
     #steps:
-     # - uses: actions/checkout@v2
-      #- name: Copy _includes
-      #  uses: andstor/copycat-action@v3
-      #  with:
-      #    personal_token: ${{ secrets.API_TOKEN_GITHUB }}
-       #   src_path: '/_includes/'
-       #   dst_owner: 'josh-justjosh'
-      #    dst_repo_name: 'homepage'
-       #   dst_path: '/'
+      #- name: Wait 5 minutes before running
+       # uses: jakejarvis/wait-action@master
+        #with:
+          #time: '300s'
+
+  Copy_includes:
+    needs: wait
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Copy _includes
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.API_TOKEN_GITHUB }}
+          src_path: '/_includes/'
+          dst_owner: 'josh-justjosh'
+          dst_repo_name: 'homepage'
+          dst_path: '/'
 
   Copy_sass:
-    needs: test
+    needs: Copy_includes
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

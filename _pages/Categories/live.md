@@ -26,6 +26,6 @@ date: 2021-12-31
     {% endunless %}
   {% endfor %}
   {% if posts == false %}
-  <p style="text-align:center;" ><br />Oops, there's nothing here at the moment!<br /><br />If I'm live blogging an event or doing a livestream, it'll show up here<br /><br />In the meantime, you can go back to the <a href="{{ site.baseurl }}">main page</a></p>
+  <p style="text-align:center;" ><br />Oops, there's nothing here at the moment!<br /><br />If I'm live blogging an event or doing a livestream, it'll show up here<br /><br />In the meantime, you can go back to the <a href="https://blog.josh.me.uk/live">main page</a></p>
   {% endif %}
 </div>

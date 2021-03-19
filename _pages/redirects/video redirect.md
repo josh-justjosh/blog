@@ -8,5 +8,5 @@ date: 2021-12-31
   <meta http-equiv="refresh" content="3; URL=https://blog.josh.me.uk/videos" />
 </head>
 <body>
-<p>Oops, I think you've been taken to the wrong place, you're now being redirected to the right page.<br />If you haven't moved after a few seconds, <a href="https://blog.josh.me.uk/videos">click here</a>.</p>
+<p style="text-align:center;">Oops, I think you've been taken to the wrong place, you're now being redirected to the right page.<br /><br />If you haven't moved after a few seconds, <a href="https://blog.josh.me.uk/videos">click here</a>.</p>
 </body>

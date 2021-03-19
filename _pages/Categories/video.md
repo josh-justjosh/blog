@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /categories/videos
+permalink: /videos
 title: Videos
 date: 2021-12-31
 ---

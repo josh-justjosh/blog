@@ -13,8 +13,7 @@ date: 2021-12-31
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
     <p></p>
-    
-    <h3 style="text-transform: capitalize;" class="category-head">{% if category_name == "video" %}<a href="{{site.baseurl}}/categories/videos">{% elsif category_name == "live" %}<a href="{{site.baseurl}}/live">{% endif %}{{ category_name }}{% unless category_name == "live" %}s{% endunless %}{% if category_name == "video" or category_name == "live" %}</a>{% endif %}</h3>
+    <h3 style="text-transform: capitalize;" class="category-head">{% if category_name == "video" %}<a href="{{site.baseurl}}/categories/videos">{% elsif category_name == "live" %}<a href="{{site.baseurl}}/live">{% elsif category_name == "post" %}<a href="{{site.baseurl}}/live">{% endif %}{{ category_name }}{% unless category_name == "live" %}s{% endunless %}{% if category_name == "video" or category_name == "live" or category_name == "post" %}</a>{% endif %}</h3>
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
     {% unless post.hidden == true %}

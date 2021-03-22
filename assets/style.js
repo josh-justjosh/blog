@@ -37,4 +37,3 @@ function isActuallyDarkTheme() {
       btn.addEventListener("click", toggleTheme)
     }
   )
-  

@@ -223,6 +223,4 @@ jobs:
           src_path: '/.github/FUNDING.yml'
           dst_owner: 'josh-justjosh'
           dst_repo_name: 'homepage'
-          dst_path: '/.github/'
-          
-          
+          dst_path: '/.github/'          

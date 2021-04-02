@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Good Friday Spontaneous Worship"
-date: 2021-04-02 12:50 +0100
+date: 2021-04-02 13:00 +0100
 categories: video live
 elsewhere: <a href="https://stwderby.org/">St Werb's Derby</a>
 ---

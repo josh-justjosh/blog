@@ -13,12 +13,25 @@ date: 2021-12-31
           <p class="post_date"{% if post.categories contains "video" or post.categories contains "live" %} style="color: white;"{% endif %}>{{ post.date | date: "%e %B %Y" }}</p>
         </div>
       </a>
-      {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
+      <div class="post-elsewhere">
+        {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
+      </div>
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      {% if post.categories contains "video" or post.categories contains "live" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
+      {% unless post.categories contains "video" or post.categories contains "live" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endunless %}
+      <div class="post-roles">
+        {% if post %}
+          {% assign roles = post.roles %}
+        {% else %}
+          {% assign roles = page.roles %}
+        {% endif %}
+        {% for role in roles %}
+          <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role}}</a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+      </div>
     </article>
   {% endfor %}
 

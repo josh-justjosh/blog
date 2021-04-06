@@ -21,6 +21,17 @@ date: 2021-12-31
       <div class="entry">
         {{ post.excerpt }}
       </div>
+      <div class="post-roles">
+        {% if post %}
+          {% assign roles = post.roles %}
+        {% else %}
+          {% assign roles = page.roles %}
+        {% endif %}
+        {% for role in roles %}
+          <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role}}</a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+      </div>
     </article>
     {% endunless %}
   {% endfor %}

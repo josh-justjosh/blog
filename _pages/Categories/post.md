@@ -21,6 +21,7 @@ date: 2021-12-31
       <div class="entry">
         {{ post.excerpt }}
       </div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
     {% endunless %}
   {% endfor %}

@@ -2,7 +2,7 @@
 layout: post
 title: Update to the parkrun Cancellations Map
 date: 2021-05-12 12:25:00 +0100
-lat_modified_at: 2021-05-18 12:46:00 +0100
+lat_modified_at: 2021-05-18 11:46:00 +0100
 categories:
   - post
 tags: parkrun
@@ -15,6 +15,6 @@ However, parkrun [said in February](https://blog.parkrun.com/uk/2021/02/26/resta
 
 So fingers crossed we’ll reach the 90% line by then and then on 31st May (the Monday before) events in England will turn green for the first time since 14th March 2020.
 
-18<sup>th</sup> May Update:
+#### 18<sup>th</sup> May Update:
 
 As of the last update to the [Current Landowner Permissions](https://blog.parkrun.com/uk/2021/04/30/current-landowner-permissions/){: target="_blank" rel="noopener"}&nbsp;page yesterday, 181 of the 589 english parkruns have permission to return - just 30%. I have to admit, I am definitely less optimistic than I was a week ago of parkrun returning on 5<sup>th</sup> June.

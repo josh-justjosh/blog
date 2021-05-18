@@ -2,7 +2,7 @@
 layout: post
 title: Update to the parkrun Cancellations Map
 date: 2021-05-12 12:25:00 +0100
-lat_modified_at: 2021-05-18 11:46:00 +0100
+last_modified_at: 2021-05-18 11:46:00 +0100
 categories:
   - post
 tags: parkrun

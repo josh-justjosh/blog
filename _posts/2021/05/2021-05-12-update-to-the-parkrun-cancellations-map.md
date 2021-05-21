@@ -2,10 +2,11 @@
 layout: post
 title: Update to the parkrun Cancellations Map
 date: 2021-05-12 12:25:00 +0100
-last_modified_at: 2021-05-18 11:46:00 +0100
+last_modified_at: 2021-05-21 16:51:00 +0100
 categories:
   - post
-tags: parkrun
+tags: 
+  - parkrun
 ---
 Just a quick update to share that the [parkrun Cancellations map](https://josh.me.uk/parkrun-cancellations/){: target="_blank" rel="noopener"} now also shows english events that have received permission to restart on 5th June. These are shown as orange dots. The requests for permission was sent on 27<sup>th</sup> April and at the time of writing 139 of the 589 parkruns in England have received permission to return - about 24%.
 

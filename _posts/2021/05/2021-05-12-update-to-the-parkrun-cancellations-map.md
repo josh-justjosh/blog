@@ -18,3 +18,7 @@ So fingers crossed we’ll reach the 90% line by then and then on 31st May (the 
 #### 18<sup>th</sup> May Update:
 
 As of the last update to the [Current Landowner Permissions](https://blog.parkrun.com/uk/2021/04/30/current-landowner-permissions/){: target="_blank" rel="noopener"}&nbsp;page yesterday, 181 of the 589 english parkruns have permission to return - just 30%. I have to admit, I am definitely less optimistic than I was a week ago of parkrun returning on 5<sup>th</sup> June.
+
+#### 21<sup>st</sup> May Update:
+
+As was widely expected, it was announced this morning (you can read the [blog post](https://blog.parkrun.com/uk/2021/05/21/uk-update-21-may/){: target="_blank" rel="noopener"} or [press release](https://blog.parkrun.com/uk/2021/05/21/parkrun-to-delay-restart-of-5k-events-in-england/){: target="_blank" rel="noopener"}) that parkrun will not return until the 26<sup>th</sup> June. 304 of the 589 english parkruns (52%) now have permission to return. The [cancellations map](https://josh.me.uk/parkrun-cancellations/){: target="_blank" rel="noopener"} was updates this afternoon.

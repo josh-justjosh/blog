@@ -5,7 +5,7 @@ title: Roles
 date: 2021-12-31
 ---
 
-{% assign roles = 'Vision Mixer, Camera Operator' | split: ', ' | sort %}
+{% assign roles = 'Vision Mixer, Camera Operator, Runner' | split: ', ' | sort %}
 
 <div id="archives">
 {% for role in roles %}

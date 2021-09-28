@@ -42,8 +42,8 @@ layout: null
       <itunes:author>{{ site.slletshow.author }}</itunes:author>
       <itunes:subtitle>{{ post.description | strip_html }}</itunes:subtitle>
       <itunes:summary>{{ post.description | strip_html }}</itunes:summary>
-      <itunes:explicit>{{ post.explicit }}</itunes:explicit>
       <itunes:duration>{{ post.duration }}</itunes:duration>
+      <itunes:explicit>{% if post.explicit %}yes{% else %}no{% endif %}</itunes:explicit>
       <content:encoded>
         <![CDATA[{{post.content}}]]>
       </content:encoded>

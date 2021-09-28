@@ -4,8 +4,20 @@ permalink: /slletshow
 title: The SLLET Radio Show
 date: 2021-12-31
 ---
-
-<h1>{{page.title}}</h1>
+<img src="/images/Shared Content/SLLET radio wide.png">
+<!--<h1>{{page.title}}</h1>-->
+<div style="text-align:center;">
+  <a href="/slletshow/rss"><i class="svg-icon rss"></i></a>
+  <a href="https://podcasts.apple.com/us/podcast/the-sllet-radio-show/id1587759816"><i class="svg-icon apple"></i></a>
+  <a href="https://pca.st/bvsgaixz"><i class="svg-icon pocketcasts"></i></a>
+  <a href="https://overcast.fm/itunes1587759816"><i class="svg-icon overcast"></i></a>
+  <a href="https://open.spotify.com/show/3QFAmW6xEww6kiuk4CuKsG?si=tgOAAZV-S6K96rE0JrXvZg&dl_branch=1"><i class="svg-icon spotify"></i></a>
+  <i class="svg-icon"></i>
+  <a href="https://facebook.com/slletshow"><i class="svg-icon facebook"></i></a>
+  <a href="https://instagram.com/slletshow"><i class="svg-icon instagram"></i></a>
+  <a href="https://twitter.com/slletshow"><i class="svg-icon twitter"></i></a>
+  <a href="mailto:slletshow@gmail.com"><i class="svg-icon email"></i></a>
+</div>
 <div class="posts">
   {% for post in site.categories['slletshow'] %}
     {% unless post.hidden == true %}
@@ -20,7 +32,7 @@ date: 2021-12-31
         </div>
       </a>
       {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
-      <div class="post-roles">
+      <!--<div class="post-roles">
         {% if post %}
           {% assign roles = post.roles %}
         {% else %}
@@ -30,7 +42,7 @@ date: 2021-12-31
           <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role}}</a>
           {% unless forloop.last %}&nbsp;{% endunless %}
         {% endfor %}
-      </div>
+      </div>-->
       </div>
       </div>
       <audio controls style="width: 100%;">

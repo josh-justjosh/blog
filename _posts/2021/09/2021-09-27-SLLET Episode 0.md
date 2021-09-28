@@ -9,6 +9,9 @@ mp3: https://www.dropbox.com/s/1ixhutvhhh08nwd/Episode%200.mp3?raw=1
 filelength: 589824
 duration: 46
 explicit: No
+hosts: ["Josh Brunning"]
+guests: Null
+producers: Null
 
 layout: podcast
 date: 2021-09-27

@@ -106,10 +106,11 @@ licence: CC-BY-CA
 slletshow:
   title: The SLLET Radio Show
   author: Phantom Radio
+  link: https://blog.josh.me.uk/slletshow
   email: slletshow@gmail.com
   art: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
-  category: Talk
-  explicit: No
+  category: Technology
+  explicit: "No"
   subtitle: A show by members of Derby's SLLET team on Phantom Radio
   summary: >
     == COMING SOON ==

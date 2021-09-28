@@ -1,4 +1,4 @@
 ---
 layout: slletshow-feed-layout
-permalink: /slletshow/feed.xml/
+permalink: /slletshow/rss
 ---

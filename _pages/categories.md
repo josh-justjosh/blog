@@ -19,7 +19,7 @@ date: 2021-12-31
     {% for post in site.categories[category_name] %}
     {% unless post.hidden == true %}
     <article class="archive-item">
-      <p><center><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{% if category_name == "podcast" %}{{post.show}}: #{{post.episode}}: {% endif %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</center></p>
+      <p><center><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{% if category_name == "podcast" %}{{post.show}}: {% unless post.episode == Null %}#{{post.episode}}: {% endunless %}{% endif %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</center></p>
     </article>
     {% assign posts = true %}
     {% endunless %}

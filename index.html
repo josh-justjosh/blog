@@ -20,7 +20,7 @@ date: 2021-12-31
       <a href="{{ site.baseurl }}{% if post.categories contains "live" %}/live{% else %}{{ post.url }}{% endif %}">
         <h1 style="margin-top: 0;">{% if post.categories contains "live" and forloop.first == true %}🔴 LIVE 🔴<br />{% endif %}{% if post.categories contains "podcast" %}{{post.show}}{% else %}{{ post.title }}{% endif %}</h1>
         {% if post.categories contains "podcast" %}
-          <h2 style="margin: 0;">#{{ post.episode }} - "{{ post.title }}"</h2>
+          <h2 style="margin: 0;">{% unless post.episode == Null %}#{{post.episode}} - {% endunless %}"{{ post.title }}"</h2>
         {% endif %}
         <div>
           <p class="post_date"{% if post.categories contains "video" or post.categories contains "live" %} style="color: white;"{% endif %}>{{ post.date | date: "%e %B %Y" }}</p>

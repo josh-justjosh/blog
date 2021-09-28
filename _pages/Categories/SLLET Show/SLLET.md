@@ -14,7 +14,7 @@ date: 2021-12-31
         <div style="display: flex; flex-direction: column; height: 100%; justify-content: center; align-items: center;"><img height="200" width="200" style="vertical-align:middle;" src="{{post.artwork}}"></div>
         <div style="grid-column-start: 2; grid-column-end: 4; display: flex; flex-direction: column; height: 100%; justify-content: center;">
       <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1 style="margin-top: 0;">#{{ post.episode }} - "{{ post.title }}"</h1>
+        <h1 style="margin-top: 0;">{% unless post.episode == Null %}#{{ post.episode }} - {% endunless %}"{{ post.title }}"</h1>
         <div>
           <p class="post_date">{{ post.date | date: "%e %B %Y" }}</p>
         </div>

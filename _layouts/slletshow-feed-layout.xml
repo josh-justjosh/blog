@@ -1,8 +1,8 @@
 ---
 layout: null
 ---
-
-<rss xmlns:atom="http://www.w3.org/2005/Atom/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <atom:link href="https://blog.josh.me.uk/slletshow/feed.xml/" rel="self" type="application/rss+xml" />
     <title>{{ site.slletshow.title }}</title>
@@ -29,12 +29,17 @@ layout: null
       <title>{{ post.episode }}:"{{ post.title }}"</title>
       <description>{{ post.description | strip_html }}</description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <enclosure url="{{ post.mp3 }}" length="{{ post.length | round }}" type="audio/mp3"/>
+      <enclosure
+        url="{{ post.mp3 }}"
+        length="{{ post.duration | round }}"
+        type="audio/mp3"/>
       <link>{{ site.url }}{{ post.url }}</link>
       <guid>{{ site.url }}{{ post.url }}</guid>
       <itunes:title>{{ post.title }}</itunes:title>
-      <itunes:episode>{{ post.episode }}</itunes:episode>
-      <itunes:author>{{ post.author }}</itunes:author>
+      {% unless post.episode == Null %}<itunes:episode>{{ post.episode }}</itunes:episode>{% endunless %}
+      {% unless post.season == Null %}<itunes:season>{{ post.season }}</itunes:season>{% endunless %}
+      {% unless post.type == Null %}<itunes:episodeType>{{ post.type }}</itunes:episodeType>{% endunless %}
+      <itunes:author>{{ site.slletshow.author }}</itunes:author>
       <itunes:subtitle>{{ post.description | strip_html }}</itunes:subtitle>
       <itunes:summary>{{ post.description | strip_html }}</itunes:summary>
       <itunes:explicit>{{ post.explicit }}</itunes:explicit>

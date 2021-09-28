@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/slletshow-1.0.dtd" version="2.0">
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:atom="http://www.w3.org/2005/Atom/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>{{ site.slletshow.title }}</title>
     <link>{{ site.slletshow.link }}</link>
     <itunes:author>{{ site.slletshow.author }}</itunes:author>
     <copyright>{{ site.license }}</copyright>
-    <language>en-gb</language>
+    <language>en-GB</language>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <itunes:category text="{{ site.slletshow.category }}">
@@ -25,18 +24,23 @@
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.categories.slletshow %}
     <item>
-      <title>#{{ post.episode }} &mdash; "{{ post.title }}"</title>
-      <itunes:explicit>{{ post.explicit }}</itunes:explicit>
-      <itunes:author>{{ site.slletshow.author }}</itunes:author>
-      <itunes:duration>{{ post.duration }}</itunes:duration>
+      <title>{{ post.episode }}:"{{ post.title }}"</title>
+      <description>{{ post.description | strip_html }}</description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <itunes:subtitle></itunes:subtitle>
-      <itunes:summary><![CDATA[{{ post.content | strip_html }}]]></itunes:summary>
-      <description><![CDATA[{{ post.content | strip_newlines }}]]></description>
-      <guid isPermaLink="true">{{ post.mp3 }}</guid>
-      <category>{{ site.slletshow.category }}</category>
-      <enclosure length="{{ post.length }}" url="{{ post.mp3 }}" type="audio/mpeg"/>
-    </item>
+      <enclosure url="{{ post.mp3 }}" length="{{ post.length }}" type="audio/mp3"/>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid>{{ site.url }}{{ post.url }}</guid>
+      <itunes:title>{{ post.title }}</itunes:title>
+      <itunes:episode>{{ post.episode }}</itunes:episode>
+      <itunes:author>{{ post.author }}</itunes:author>
+      <itunes:subtitle>{{ post.description | strip_html }}</itunes:subtitle>
+      <itunes:summary>{{ post.description | strip_html }}</itunes:summary>
+      <itunes:explicit>{{ post.explicit }}</itunes:explicit>
+      <itunes:duration>{{ post.duration }}</itunes:duration>
+      <content:encoded>
+        <![CDATA[{{post.content}}]]>
+      </content:encoded>
+      <itunes:image href="{{ post.artwork }}"/>
     {% endfor %}
   </channel>
 </rss>

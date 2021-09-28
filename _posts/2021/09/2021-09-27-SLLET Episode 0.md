@@ -6,8 +6,8 @@ episode: Null
 season: Null
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
 mp3: https://www.dropbox.com/s/1ixhutvhhh08nwd/Episode%200.mp3?raw=1
-duration: 589824
-length: 0:00:46
+filelength: 589824
+duration: 46
 explicit: No
 
 layout: podcast

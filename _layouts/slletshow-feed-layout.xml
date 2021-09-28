@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/slletshow-1.0.dtd" version="2.0">
+  <channel>
+    <title>{{ site.slletshow.title }}</title>
+    <link>{{ site.slletshow.link }}</link>
+    <itunes:author>{{ site.slletshow.author }}</itunes:author>
+    <copyright>{{ site.license }}</copyright>
+    <language>en-gb</language>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <itunes:category text="{{ site.slletshow.category }}">
+      {% for subcategory in site.slletshow.subcategories %}  
+      <itunes:category text="{{ subcategory }}"/>
+      {% endfor %}
+    </itunes:category>
+    <itunes:explicit>{{ site.slletshow.explicit }}</itunes:explicit>
+    <itunes:image href="{{ site.slletshow.art }}"/>
+    <itunes:subtitle>{{ site.slletshow.subtitle }}</itunes:subtitle>
+    <description>{{ site.slletshow.summary }}</description>
+    <itunes:summary>{{ site.slletshow.summary }}</itunes:summary>
+    <itunes:owner>
+      <itunes:name>{{ site.slletshow.author }}</itunes:name>
+      <itunes:email>{{ site.slletshow.email }}</itunes:email>
+    </itunes:owner>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.categories.slletshow %}
+    <item>
+      <title>#{{ post.episode }} &mdash; "{{ post.title }}"</title>
+      <itunes:explicit>{{ post.explicit }}</itunes:explicit>
+      <itunes:author>{{ site.slletshow.author }}</itunes:author>
+      <itunes:duration>{{ post.duration }}</itunes:duration>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:summary><![CDATA[{{ post.content | strip_html }}]]></itunes:summary>
+      <description><![CDATA[{{ post.content | strip_newlines }}]]></description>
+      <guid isPermaLink="true">{{ post.mp3 }}</guid>
+      <category>{{ site.slletshow.category }}</category>
+      <enclosure length="{{ post.length }}" url="{{ post.mp3 }}" type="audio/mpeg"/>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

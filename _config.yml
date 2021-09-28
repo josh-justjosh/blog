@@ -99,3 +99,19 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# Misc
+licence: CC-BY-CA
+# Podcast
+slletshow:
+  title: The SLLET Radio Show
+  author: Phantom Radio
+  email: slletshow@gmail.com
+  art: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
+  category: Talk
+  explicit: No
+  subtitle: A show by members of Derby's SLLET team on Phantom Radio
+  summary: >
+    == COMING SOON ==
+    A show by members of Derby's SLLET team on Phantom Radio
+

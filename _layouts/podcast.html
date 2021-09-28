@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<h1 style="margin-bottom: 0;">{% if page.categories contains "slletshow" %}<a href="/slletshow">{{ page.show }}</a>{% else %}{{page.show}}{% endif %}</h1>
+<h2 style="margin-top: 0;">#{{ page.episode }} - "{{ page.title }}"</h2>
+<img height="200" width="200" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;" src="{{page.artwork}}">
+<audio controls style="width: 100%;">
+    <source src="{{ page.mp3 }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+<div class="entry">
+{{ content }}
+</div>
+
+<div class="post-roles">
+    {% if post %}
+      {% assign roles = post.roles %}
+    {% else %}
+      {% assign roles = page.roles %}
+    {% endif %}
+    {% for role in roles %}
+    {% if forloop.first == true %}
+        <p>Role{% if forloop.length > 1 %}s{% endif %}:&nbsp;
+    {% endif %}
+      <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role}}</a>
+      {% if forloop.last %}</p>{% else %}&nbsp;{% endif %}
+    {% endfor %}
+  </div>

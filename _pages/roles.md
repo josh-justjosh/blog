@@ -5,7 +5,14 @@ title: Roles
 date: 2021-12-31
 ---
 
-{% assign roles = 'Vision Mixer, Camera Operator, Video Editor, Runner' | split: ', ' | sort %}
+{% assign roles = '' %}
+{% for i in site.posts %}
+{% for j in i.roles %}
+{% assign roles = roles | append: j %}
+{% assign roles = roles | append: ', ' %}
+{%endfor%}
+{%endfor%}
+{% assign roles = roles | split: ", " | uniq | sort %}
 
 <div id="archives">
 {% for role in roles %}
@@ -19,7 +26,7 @@ date: 2021-12-31
   {% if post.roles contains role %}
   {% unless post.hidden == true %}
   <article class="archive-item">
-    <p><center><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</center></p>
+    <p><center><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{% if post.categories contains "podcast" %}{{post.show}}: #{{post.episode}}: {% endif %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</center></p>
     </article>
     {% assign posts = true %}
   {% endunless %}

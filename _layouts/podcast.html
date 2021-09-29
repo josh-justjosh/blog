@@ -11,6 +11,7 @@ layout: default
   <source src="{{ page.mp3 }}" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+{% if page.categories contains "slletshow" %}
 <div style="text-align:center;">
   <a href="/slletshow/rss"><i class="svg-icon rss"></i></a>
   <a href="https://podcasts.apple.com/us/podcast/the-sllet-radio-show/id1587759816"><i class="svg-icon apple"></i></a>
@@ -23,6 +24,7 @@ layout: default
   <a href="https://twitter.com/slletshow"><i class="svg-icon twitter"></i></a>
   <a href="mailto:slletshow@gmail.com"><i class="svg-icon email"></i></a>
 </div>
+{% endif %}
 <div class="entry">
   {{ content }}
 </div>

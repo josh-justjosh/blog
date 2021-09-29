@@ -12,6 +12,7 @@ date: 2021-12-31
   <a href="https://pca.st/bvsgaixz"><i class="svg-icon pocketcasts"></i></a>
   <a href="https://overcast.fm/itunes1587759816"><i class="svg-icon overcast"></i></a>
   <a href="https://open.spotify.com/show/3QFAmW6xEww6kiuk4CuKsG?si=tgOAAZV-S6K96rE0JrXvZg&dl_branch=1"><i class="svg-icon spotify"></i></a>
+  <a href="https://www.youtube.com/channel/UClG7zTagAztOx5KhVwPgRVQ"><i class="svg-icon youtube"></i></a>
   <i class="svg-icon"></i>
   <a href="https://facebook.com/slletshow"><i class="svg-icon facebook"></i></a>
   <a href="https://instagram.com/slletshow"><i class="svg-icon instagram"></i></a>

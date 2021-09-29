@@ -8,24 +8,36 @@ layout: default
 {% unless page.guests == Null %}<p style="text-align: center; margin-top: 0; margin-bottom: 0;">With {% for i in page.guests %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}
 {% unless page.producers == Null %}<p style="text-align: center; margin-top: 0; margin-bottom: 0;">Produced by {% for i in page.producers %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}
 <audio controls style="width: 100%; margin-top: 15px;">
-    <source src="{{ page.mp3 }}" type="audio/mpeg">
+  <source src="{{ page.mp3 }}" type="audio/mpeg">
   Your browser does not support the audio element.
-  </audio>
+</audio>
+<div style="text-align:center;">
+  <a href="/slletshow/rss"><i class="svg-icon rss"></i></a>
+  <a href="https://podcasts.apple.com/us/podcast/the-sllet-radio-show/id1587759816"><i class="svg-icon apple"></i></a>
+  <a href="https://pca.st/bvsgaixz"><i class="svg-icon pocketcasts"></i></a>
+  <a href="https://overcast.fm/itunes1587759816"><i class="svg-icon overcast"></i></a>
+  <a href="https://open.spotify.com/show/3QFAmW6xEww6kiuk4CuKsG?si=tgOAAZV-S6K96rE0JrXvZg&dl_branch=1"><i class="svg-icon spotify"></i></a>
+  <i class="svg-icon"></i>
+  <a href="https://facebook.com/slletshow"><i class="svg-icon facebook"></i></a>
+  <a href="https://instagram.com/slletshow"><i class="svg-icon instagram"></i></a>
+  <a href="https://twitter.com/slletshow"><i class="svg-icon twitter"></i></a>
+  <a href="mailto:slletshow@gmail.com"><i class="svg-icon email"></i></a>
+</div>
 <div class="entry">
-{{ content }}
+  {{ content }}
 </div>
 
 <!--<div class="post-roles">
-    {% if post %}
-      {% assign roles = post.roles %}
-    {% else %}
-      {% assign roles = page.roles %}
-    {% endif %}
-    {% for role in roles %}
-    {% if forloop.first == true %}
-        <p>Role{% if forloop.length > 1 %}s{% endif %}:&nbsp;
-    {% endif %}
-      <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role}}</a>
-      {% if forloop.last %}</p>{% else %}&nbsp;{% endif %}
-    {% endfor %}
-  </div>-->
+  {% if post %}
+    {% assign roles = post.roles %}
+  {% else %}
+    {% assign roles = page.roles %}
+  {% endif %}
+  {% for role in roles %}
+  {% if forloop.first == true %}
+      <p>Role{% if forloop.length > 1 %}s{% endif %}:&nbsp;
+  {% endif %}
+    <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role}}</a>
+    {% if forloop.last %}</p>{% else %}&nbsp;{% endif %}
+  {% endfor %}
+</div>-->

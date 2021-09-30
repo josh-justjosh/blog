@@ -22,16 +22,23 @@ permalink: /slletshow/0
 ---
 
 ## Where to Listen
-* Listen Live - [phantom-media.co.uk/phantom-radio/](https://phantom-media.co.uk/phantom-radio/)
-* Podcast Feed (RSS) - [anchor.fm/s/6d1931d4/podcast/rss](https://anchor.fm/s/6d1931d4/podcast/rss)
-* Other places to listen - [linktr.ee/slletshow](https://linktr.ee/slletshow)
+* [Listen Live](https://phantom-media.co.uk/phantom-radio/)
+* [Listen Live on TuneIn](https://tunein.com/radio/Phantom-Radio-s261801/)
+* [Listen on Apple Podcasts](https://podcasts.apple.com/us/podcast/the-sllet-radio-show/id1587759816)
+* [Listen on Google Podcasts](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82ZDE5MzFkNC9wb2RjYXN0L3Jzcw)
+* [Listen on Pocket Casts](https://pca.st/bvsgaixz)
+* [Listen on Overcast](https://overcast.fm/itunes1587759816)
+* [Listen on Spotify](https://open.spotify.com/show/3QFAmW6xEww6kiuk4CuKsG?si=tgOAAZV-S6K96rE0JrXvZg&dl_branch=1)
+* [Watch & Listen on YouTube](https://open.spotify.com/show/3QFAmW6xEww6kiuk4CuKsG?si=tgOAAZV-S6K96rE0JrXvZg&dl_branch=1)
+* [Podcast Feed (RSS)](https://blog.josh.me.uk/slletshow/rss)
+* [All the Links](https://linktr.ee/slletshow)
 
 ## Our Social Media
-* Facebook Page - [facebook.com/SLLETshow](https://facebook.com/SLLETshow)
-* Instagram - [instagram.com/SLLETshow](https://instagram.com/SLLETshow)
-* Twitter - [twitter.com/SLLETshow](https://twitter.com/SLLETshow)
-* YouTube - [youtube.com/channel/UClG7zTagAztOx5KhVwPgRVQ](https://youtube.com/channel/UClG7zTagAztOx5KhVwPgRVQ)
+* [Facebook Page](https://facebook.com/SLLETshow)
+* [Instagram](https://instagram.com/SLLETshow)
+* [Twitter](https://twitter.com/SLLETshow)
+* [YouTube](https://youtube.com/channel/UClG7zTagAztOx5KhVwPgRVQ)
 
 ## Get In Touch
 * On Social Media (links above)
-* Email - [slletshow@gmail.com](mailto:slletshow@gmail.com)
+* [Email slletshow@gmail.com](mailto:slletshow@gmail.com)

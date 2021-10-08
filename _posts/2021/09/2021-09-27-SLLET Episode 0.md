@@ -9,14 +9,12 @@ mp3: https://www.dropbox.com/s/1ixhutvhhh08nwd/Episode%200.mp3?raw=1
 filelength: 589824
 duration: 46
 explicit: No
-hosts: ["Josh Brunning"]
-guests: Null
-producers: Null
+people: ['Host':'Josh Brunning']
 
 layout: podcast
 date: 2021-09-27
 categories: slletshow podcast
-elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Radio</a>
+elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: Host
 permalink: /slletshow/0
 ---

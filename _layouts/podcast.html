@@ -2,15 +2,22 @@
 layout: default
 ---
 <h1 style="margin-bottom: 0;">{% if page.categories contains "slletshow" %}<a href="/slletshow">{{ page.show }}</a>{% else %}{{page.show}}{% endif %}</h1>
-<h2 style="margin-top: 0;">{% unless post.episode == Null %}#{{ page.episode }} - {% endunless %}"{{ page.title }}"</h2>
-<img height="200" width="200" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;" src="{{page.artwork}}">
-{% unless page.hosts == Null %}<p style="text-align: center; margin-bottom: 0;">Hosted by {% for i in page.hosts %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}
+<h2 style="margin-top: 0;">{% unless page.episode == Null %}#{{ page.episode }}{% endunless %}{% unless page.episode == Null or page.title == page.show %} - {% endunless %}{% unless page.title == page.show %}"{{ page.title }}"{% endunless %}</h2>
+{% unless page.artwork == Null %}<img height=auto width="200" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;" src="{{page.artwork}}">{% endunless %}
+{% for roles in page.people %}
+{% for role in roles %}
+<p style="text-align: center; margin: 0;">{% if role[0] == "Host" or role[0] == "Hosts" %}Hosted by {% elsif role[0] == "Guest" or role[0] == "Guests" %}With {% else %}{{ role[0] }}: {% endif %}{% for i in role[1] %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>
+{% endfor %}
+{% endfor %}
+<!--{% unless page.hosts == Null %}<p style="text-align: center; margin-bottom: 0;">Hosted by {% for i in page.hosts %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}
 {% unless page.guests == Null %}<p style="text-align: center; margin-top: 0; margin-bottom: 0;">With {% for i in page.guests %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}
-{% unless page.producers == Null %}<p style="text-align: center; margin-top: 0; margin-bottom: 0;">Produced by {% for i in page.producers %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}
-<audio controls style="width: 100%; margin-top: 15px;">
+{% unless page.producers == Null %}<p style="text-align: center; margin-top: 0; margin-bottom: 0;">Produced by {% for i in page.producers %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}-->
+<div style="text-align:center">
+<audio controls style="width: 75%; margin-top: 15px;">
   <source src="{{ page.mp3 }}" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+</div>
 {% if page.categories contains "slletshow" %}
 <div style="text-align:center;">
   <a href="/slletshow/rss"><i class="svg-icon rss"></i></a>

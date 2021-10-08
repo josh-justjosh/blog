@@ -47,10 +47,12 @@ date: 2021-12-31
       </div>-->
       </div>
       </div>
-      <audio controls style="width: 100%;">
+      <div style="text-align:center">
+      <audio controls style="width: 75%">
         <source src="{{ post.mp3 }}" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
+      </div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Show Notes</a>
     </article>
     {% endunless %}

@@ -48,7 +48,7 @@ layout: default
   {% if forloop.first == true %}
       <p>Role{% if forloop.length > 1 %}s{% endif %}:&nbsp;
   {% endif %}
-    <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role}}</a>
+    <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role | replace: " ", "&nbsp;"}}</a>
     {% if forloop.last %}</p>{% else %}&nbsp;{% endif %}
   {% endfor %}
 </div>-->

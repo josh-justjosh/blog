@@ -28,7 +28,7 @@ date: 2021-12-31
           {% assign roles = page.roles %}
         {% endif %}
         {% for role in roles %}
-          <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role}}</a>
+          <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role | replace: " ", "&nbsp;"}}</a>
           {% unless forloop.last %}&nbsp;{% endunless %}
         {% endfor %}
       </div>-->

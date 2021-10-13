@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /phantomradio/graph
+title: Phantom Radio Listeners Graph
 ---
 
 <div>
@@ -25,6 +26,11 @@ var chart = new Chart(document.getElementById('myChart'), {
         }],
     },
     options: {
+        plugins: {
+            legend: {
+                display: false
+                }
+            },
         scales: {
         x: {
             type: 'time',
@@ -52,7 +58,7 @@ var chart = new Chart(document.getElementById('myChart'), {
             }
         }
     },
-    aspectRatio: 1.5,
+    aspectRatio: 2,
     spanGaps: true,
     }
 });

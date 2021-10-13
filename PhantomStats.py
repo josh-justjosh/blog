@@ -4,6 +4,7 @@ import datetime
 
 def getlisteners(url):
     stats = json.loads(requests.get(url).text)
+    print(stats)
     try:
         listeners = stats['icestats']['source'][0]['listeners']
     except KeyError:

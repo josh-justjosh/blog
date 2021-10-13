@@ -15,7 +15,7 @@ var chart = new Chart(document.getElementById('myChart'), {
     type: 'line',
     data: {
         datasets: [{
-            label: 'Data',
+            label: 'Listeners',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             data: {{ site.data.PhantomListeners | jsonify }},

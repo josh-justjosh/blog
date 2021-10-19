@@ -12,6 +12,8 @@ My projects currently include:
 * This Site
 * Being a Sound, Light and Live Event Technology student at Derby Uni
 * Vision Mixing [St Werburgh's](https://stwderby.org/) live services here in Derby
+* Being Assistant Tech Manager at [Phantom Radio](https://www.phantom-media.co.uk/phantom-radio), the student radio station
+* Hosting [The SLLET Radio Show](https://blog.josh.me.uk/slletshow) on Phantom. You can listen live from 3-5pm on Wednesdays
 
 And some of my past projects include:
 

@@ -2,7 +2,9 @@
 layout: default
 ---
 <h1 style="margin-bottom: 0;">{% if page.categories contains "slletshow" %}<a href="/slletshow">{{ page.show }}</a>{% else %}{{page.show}}{% endif %}</h1>
-<h2 style="margin-top: 0;">{% unless page.episode == Null %}#{{ page.episode }}{% endunless %}{% unless page.episode == Null or page.title == page.show %} - {% endunless %}{% unless page.title == page.show %}"{{ page.title }}"{% endunless %}</h2>
+{% assign titlelc = page.title | downcase %}
+{% assign showlc = page.show | downcase %}
+<h2 style="margin: 0;">{% unless page.season == Null %}Season {{ page.season }}{% endunless %}{% unless page.season == Null or page.episode == Null and titlelc == showlc %}: {% endunless %}{% unless page.episode == Null %}#{{ page.episode }}{% endunless %}{% unless page.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}"{{ page.title }}"{% endunless %}</h2>
 {% unless page.artwork == Null %}<img height=auto width="200" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;" src="{{page.artwork}}">{% endunless %}
 {% for roles in page.people %}
 {% for role in roles %}
@@ -14,7 +16,7 @@ layout: default
 {% unless page.producers == Null %}<p style="text-align: center; margin-top: 0; margin-bottom: 0;">Produced by {% for i in page.producers %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}-->
 <div style="text-align:center">
 <audio controls style="width: 75%; margin-top: 15px;">
-  <source src="{{ page.mp3 }}" type="audio/mpeg">
+  <source src="{{ page.mp3 }}" type="audio/mpeg"/>
   Your browser does not support the audio element.
 </audio>
 </div>

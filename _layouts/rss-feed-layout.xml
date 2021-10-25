@@ -29,7 +29,6 @@ layout: null
 {% endfor %}
 <summary type="html"/>
 </entry>
-<p>{% for i in post %}{{i}} {% endfor %}</p>
 {% endunless %}
 {% endfor %}
 </feed>

@@ -14,12 +14,12 @@ layout: default
 <!--{% unless page.hosts == Null %}<p style="text-align: center; margin-bottom: 0;">Hosted by {% for i in page.hosts %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}
 {% unless page.guests == Null %}<p style="text-align: center; margin-top: 0; margin-bottom: 0;">With {% for i in page.guests %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}
 {% unless page.producers == Null %}<p style="text-align: center; margin-top: 0; margin-bottom: 0;">Produced by {% for i in page.producers %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}-->
-<div style="text-align:center">
+{% unless page.mp3 == Null %}<div style="text-align:center">
 <audio controls style="width: 75%; margin-top: 15px;">
   <source src="{{ page.mp3 }}" type="audio/mpeg"/>
   Your browser does not support the audio element.
 </audio>
-</div>
+</div>{% endunless %}
 {% if page.categories contains "slletshow" %}
 <div style="text-align:center;">
   <a href="/slletshow/rss"><i class="svg-icon rss"></i></a>

@@ -1,14 +1,9 @@
 ---
 show: 'The SLLET Radio Show'
 title: "The SLLET Radio Show"
-type: Episode
 episode: 1
 season: 1
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
-mp3: 
-filelength: 
-duration: 
-explicit: No
 people: ['Host':['Josh Brunning', 'Dan Jellicoe'], 'Guests': ['Fred Jackson', 'Zsombor Szőke']]
 
 layout: podcast
@@ -18,6 +13,8 @@ elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a
 roles: Host
 permalink: /slletshow/1
 ---
+
+Unfortunately, due to some technical difficulties, the show wasn't recorded this week. All being well, we've fixed the issue and next weeks' will be. 
 
 ## Where to Listen
 * [Listen Live](https://phantom-media.co.uk/phantom-radio/)

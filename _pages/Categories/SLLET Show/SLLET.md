@@ -48,12 +48,12 @@ date: 2021-12-31
       </div>-->
       </div>
       </div>
-      <div style="text-align:center">
-      <audio controls style="width: 75%">
-        <source src="{{ post.mp3 }}" type="audio/mpeg">
+      <div style="text-align:center">{% if post.mp3 != Null %}
+      <audio controls style="width: 75%; margin-top: 15px;">
+        <source src="{{ post.mp3 }}" type="audio/mpeg"/>
         Your browser does not support the audio element.
       </audio>
-      </div>
+      {% else %}{{ post.excerpt }}{% endif %}</div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Show Notes</a>
     </article>
     {% endunless %}

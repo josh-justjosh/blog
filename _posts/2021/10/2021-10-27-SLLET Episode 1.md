@@ -5,15 +5,15 @@ type: Episode
 episode: 1
 season: 1
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
-mp3: https://phantommedia.radioca.st/stream
-filelength: 589824
-duration: 46
+mp3: 
+filelength: 
+duration: 
 explicit: No
 people: ['Host':['Josh Brunning', 'Dan Jellicoe'], 'Guests': ['Fred Jackson', 'Zsombor Szőke']]
 
 layout: podcast
 date: 2021-10-27
-categories: slletshow radio live
+categories: slletshow
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: Host
 permalink: /slletshow/1

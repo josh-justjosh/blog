@@ -24,8 +24,9 @@ layout: null
       <itunes:email>{{ site.slletshow.email }}</itunes:email>
     </itunes:owner>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.categories.slletshow %}<item>
-      <title>{{ post.episode }}:"{{ post.title }}"</title>
+    {% for post in site.categories.slletshow %}
+      {% if post.categories contains "podcast"%}<item>
+      <title>{{ site.slletshow.title }}: {% assign titlelc = post.title | downcase %}{% assign showlc = post.show | downcase %}{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}"{{ post.title }}"{% endunless %}</title>
       <description>{{ post.description | strip_html }}</description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <enclosure
@@ -47,6 +48,6 @@ layout: null
         <![CDATA[{{post.content}}]]>
       </content:encoded>
       <itunes:image href="{{ post.artwork }}"/>
-      </item>{% endfor %}
+      </item>{% endif %}{% endfor %}
   </channel>
 </rss>

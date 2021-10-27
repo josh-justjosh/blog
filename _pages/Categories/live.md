@@ -24,7 +24,9 @@ date: 2021-12-31
       <a href="{{ site.baseurl }}{{ post.url }}">
         <h1 style="margin-top: 0;">{% if post.categories contains "podcast" or post.categories contains "radio" %}{{post.show}}{% else %}{{ post.title }}{% endif %}</h1>
         {% if post.categories contains "podcast" or post.categories contains "radio" %}
-          <h2 style="margin: 0;">{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or post.title == post.show %} - {% endunless %}{% unless post.title == post.show %}"{{ post.title }}"{% endunless %}</h2>
+          {% assign titlelc = post.title | downcase %}
+          {% assign showlc = post.show | downcase %}
+          <h2 style="margin: 0;">{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}"{{ post.title }}"{% endunless %}</h2>
         {% endif %}
       </a>
       <div class="post-elsewhere">

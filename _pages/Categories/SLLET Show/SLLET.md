@@ -7,7 +7,7 @@ date: 2021-12-31
 <img src="/images/Shared Content/SLLET radio wide.png">
 <!--<h1>{{page.title}}</h1>-->
 <div style="text-align:center;">
-  <a href="/slletshow/rss"><i class="svg-icon rss"></i></a>
+  <a href="/slletshow/rss.xml"><i class="svg-icon rss"></i></a>
   <a href="https://podcasts.apple.com/us/podcast/the-sllet-radio-show/id1587759816"><i class="svg-icon apple-podcasts"></i></a>
   <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82ZDE5MzFkNC9wb2RjYXN0L3Jzcw"><i class="svg-icon google-podcasts"></i></a>
   <a href="https://pca.st/bvsgaixz"><i class="svg-icon pocketcasts"></i></a>
@@ -28,8 +28,9 @@ date: 2021-12-31
         <div style="display: flex; flex-direction: column; height: 100%; justify-content: center; align-items: center;"><img height="200" width="200" style="vertical-align:middle;" src="{{post.artwork}}"></div>
         <div style="grid-column-start: 2; grid-column-end: 4; display: flex; flex-direction: column; height: 100%; justify-content: center;">
       <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1 style="margin-top: 0;">{% unless post.episode == Null %}#{{ post.episode }} - {% endunless %}"{{ post.title }}"</h1>
-        <div>
+          {% assign titlelc = post.title | downcase %}
+          {% assign showlc = post.show | downcase %}
+          <h1 style="margin: 0;">{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}"{{ post.title }}"{% endunless %}</h1><div>
           <p class="post_date">{{ post.date | date: "%e %B %Y" }}</p>
         </div>
       </a>

@@ -1,22 +1,23 @@
 ---
 show: 'The SLLET Radio Show'
-title: 'How to Find Us'
-type: Trailer
-episode: Null
-season: Null
+title: "The SLLET Radio Show"
+type: Episode
+episode: 1
+season: 1
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
-mp3: https://www.dropbox.com/s/1ixhutvhhh08nwd/Episode%200.mp3?raw=1
+mp3: https://phantommedia.radioca.st/stream
 filelength: 589824
 duration: 46
 explicit: No
-people: ['Host':'Josh Brunning']
+people: ['Host':['Josh Brunning', 'Dan Jellicoe'], 'Guests': ['Fred Jackson', 'Zsombor Szőke']]
 
 layout: podcast
-date: 2021-09-28 02:31 +0100
-categories: slletshow podcast
+date: 2021-10-27
+categories: slletshow radio live
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: Host
-permalink: /slletshow/0
+permalink: /slletshow/1
+published: false
 ---
 
 ## Where to Listen

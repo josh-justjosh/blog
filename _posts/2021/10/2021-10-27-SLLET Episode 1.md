@@ -17,7 +17,6 @@ categories: slletshow radio live
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: Host
 permalink: /slletshow/1
-published: false
 ---
 
 ## Where to Listen

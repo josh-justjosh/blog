@@ -46,11 +46,6 @@ date: 2021-12-31
       </div>
         </div>
       {% endif %}
-      {% unless post.categories contains "podcast" or post.categories contains "radio" %}
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      {% endunless %}
       {% if post.mp3 <> Null %}
       <div style="text-align:center">
       <audio controls style="width: 75%;">
@@ -58,6 +53,10 @@ date: 2021-12-31
         Your browser does not support the audio element.
       </audio>
     </div>
+      {% else %}
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
       {% endif %}
       {% if post.categories contains "podcast" or post.categories contains "radio" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Show Notes</a>{% elsif post.categories contains "video" or post.categories contains "live" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
       {% unless post.artwork <> Null %}

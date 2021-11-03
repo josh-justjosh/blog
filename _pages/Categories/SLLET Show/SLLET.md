@@ -25,7 +25,7 @@ date: 2021-12-31
     {% unless post.hidden == true %}
     <article style="padding: 1em;" class="post">
     <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); text-align: center; grid-gap: 1rem; margin:15px 0">
-        <div style="display: flex; flex-direction: column; height: 100%; justify-content: center; align-items: center;"><img height="200" width="200" style="vertical-align:middle;" src="{{post.artwork}}"></div>
+        <div style="display: flex; flex-direction: column; height: 100%; justify-content: center; align-items: center;"><img style="vertical-align:middle; max-width:200px; width:100%" src="{{post.artwork}}"></div>
         <div style="grid-column-start: 2; grid-column-end: 4; display: flex; flex-direction: column; height: 100%; justify-content: center;">
       <a href="{{ site.baseurl }}{{ post.url }}">
           {% assign titlelc = post.title | downcase %}

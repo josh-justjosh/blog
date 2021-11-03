@@ -1,23 +1,26 @@
 ---
 show: 'The SLLET Radio Show'
-title: 'How to Find Us'
-type: Trailer
-episode: Null
-season: Null
+title: "The SLLET Radio Show"
+episode: 2
+season: 1
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
+people: ['Host':['Josh Brunning', 'Dan Jellicoe'], 'Guests': ['Fred Jackson']]
 mp3: https://www.dropbox.com/s/991ynug1xh6s8nl/02.mp3?raw=1
-filelength: 589824
-duration: 46
+filelength: 121118720
+duration: 7569
 explicit: No
-people: ['Host':'Josh Brunning']
 
 layout: podcast
-date: 2021-09-28 02:31 +0100
+date: 2021-11-03
 categories: slletshow podcast
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: Host
-permalink: /slletshow/0
+permalink: /slletshow/2
 ---
+
+We're Back! This week Dan and Josh were joined by Producer Fred again. They discussed Josh's to Alton Towers, an EDM trip to Sheffield and Dan's trip to Chichester. Also: an image of some legs, Christmas, and Eurovision.
+
+[The Legs](https://www.rubberco.co.uk/products/non-slip-heavy-duty-rubber-flooring-rolls-studded-dot-penny-pattern-rolls-cut-lengths?currency=GBP&variant=40351650316495&cq_src=google_ads&cq_cmp=1471326925&cq_term=&cq_plac=&cq_net=g&cq_plt=gp&gclid=Cj0KCQjw5oiMBhDtARIsAJi0qk3BMQO_QX_lj4HKqsQ_3eUWCukPY22hoJQe7gl4tle18LyNihf9FSsaAuIaEALw_wcB)
 
 ## Where to Listen
 * [Listen Live](https://phantom-media.co.uk/phantom-radio/)
@@ -36,7 +39,4 @@ permalink: /slletshow/0
 * [Instagram](https://instagram.com/SLLETshow)
 * [Twitter](https://twitter.com/SLLETshow)
 * [YouTube](https://youtube.com/channel/UClG7zTagAztOx5KhVwPgRVQ)
-
-## Get In Touch
-* On Social Media (links above)
 * [Email slletshow@gmail.com](mailto:slletshow@gmail.com)

@@ -24,7 +24,7 @@ Unfortunately, due to some technical difficulties, the show wasn't recorded this
 * [Listen on Pocket Casts](https://pca.st/bvsgaixz)
 * [Listen on Overcast](https://overcast.fm/itunes1587759816)
 * [Listen on Spotify](https://open.spotify.com/show/3QFAmW6xEww6kiuk4CuKsG?si=tgOAAZV-S6K96rE0JrXvZg&dl_branch=1)
-* [Watch & Listen on YouTube](https://open.spotify.com/show/3QFAmW6xEww6kiuk4CuKsG?si=tgOAAZV-S6K96rE0JrXvZg&dl_branch=1)
+* [Watch & Listen on YouTube](https://www.youtube.com/channel/UClG7zTagAztOx5KhVwPgRVQ)
 * [Podcast Feed (RSS)](https://blog.josh.me.uk/slletshow/rss.xml)
 * [All the Links](https://linktr.ee/slletshow)
 

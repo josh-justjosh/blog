@@ -11,7 +11,7 @@ duration: 7569
 explicit: No
 
 layout: podcast
-date: 2021-11-03
+date: 2021-11-03 18:22 +0000
 categories: slletshow podcast
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: Host

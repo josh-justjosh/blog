@@ -39,4 +39,4 @@ We're Back! This week Dan and Josh were joined by Producer Fred again. They disc
 * [Instagram](https://instagram.com/SLLETshow)
 * [Twitter](https://twitter.com/SLLETshow)
 * [YouTube](https://youtube.com/channel/UClG7zTagAztOx5KhVwPgRVQ)
-* [Email slletshow@gmail.com](mailto:slletshow@gmail.com)
+* [Email show@sllet.co.uk](mailto:show@sllet.co.uk)

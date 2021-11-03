@@ -36,4 +36,4 @@ Unfortunately, due to some technical difficulties, the show wasn't recorded this
 
 ## Get In Touch
 * On Social Media (links above)
-* [Email slletshow@gmail.com](mailto:slletshow@gmail.com)
+* [Email show@sllet.co.uk](mailto:show@sllet.co.uk)

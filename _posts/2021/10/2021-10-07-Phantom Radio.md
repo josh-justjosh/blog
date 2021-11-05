@@ -43,7 +43,7 @@ artwork: https://pbs.twimg.com/profile_images/915197631269408768/wbOWmwcI_400x40
         <td>Jess Moore, Jack Holcombe and Anna Alexander</td>
     </tr>
 </table>
-<script>
+<!--<script>
 function sleep(milliseconds) {
   const date = Date.now();
   let currentDate = null;
@@ -79,4 +79,4 @@ var updateData = function(url) {
 }
 updateData("https://phantommedia.radioca.st/status-json.xsl")
 </script>
-<div style="display:flex;justify-content:space-evenly;align-items:center"><div id="result" style="text-align:center; "></div><div><button onclick='updateData("https://phantommedia.radioca.st/status-json.xsl")'>Update</button></div></div>
+<div style="display:flex;justify-content:space-evenly;align-items:center"><div id="result" style="text-align:center; "></div><div><button onclick='updateData("https://phantommedia.radioca.st/status-json.xsl")'>Update</button></div></div>-->

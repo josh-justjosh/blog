@@ -20,7 +20,7 @@ layout: null
 <published>{{ post.date | date_to_xmlschema }}</published>
 <updated>{{ post.last_modified | date_to_xmlschema }}</updated>
 <id>{{ site.url }}{{ post.url }}</id>
-<content type="html" xml:base="{{ site.url }}{{ post.url }}">{% if post.categories contains "podcast" or post.categories contains "radio" %}<audio><source src="{{ post.mp3 }}" type="audio/mpeg"/></audio>{% endif %}{{ post.content | normalize_whitespace | inspect }}</content>
+<content type="html" xml:base="{{ site.url }}{{ post.url }}">{% if post.categories contains "podcast" or post.categories contains "radio" %}<audio><source src="{{ post.mp3 }}" type="audio/mpeg"/></audio>{% endif %}{{ post.content | normalize_whitespace }}</content>
 <author>
 <name>{% if post.author == Null %}{{ site.author }}{% else %}{{ post.author }}{% endif %}</name>
 </author>

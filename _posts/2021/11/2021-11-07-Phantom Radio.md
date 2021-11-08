@@ -3,7 +3,7 @@ show: 'Phantom Radio'
 title: 'The SRA Chart Show'
 artwork: Null
 mp3: 
-people: ['Hosts':["Josh Brunning", "Alex Wood"]]
+people: ['Hosts':["Alex Wood", "Josh Brunning"]]
 layout: podcast
 date: 2021-11-07 14:00 +0000
 categories: radio

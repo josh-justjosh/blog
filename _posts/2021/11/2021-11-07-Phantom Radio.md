@@ -8,6 +8,7 @@ layout: podcast
 date: 2021-11-07 14:00 +0000
 categories: radio
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
+roles: ["Host"]
 artwork: https://pbs.twimg.com/profile_images/915197631269408768/wbOWmwcI_400x400.jpg
 published: False
 ---

@@ -99,7 +99,7 @@ exclude:
   - README.md
   - CNAME
 
-# Podcast
+# SLLETshow
 slletshow:
   title: "The SLLET Radio Show"
   author: "Phantom Radio"
@@ -114,3 +114,17 @@ slletshow:
     == LIVE 3-5 Every Wednesday ==
     A show by members of Derby's SLLET team on Phantom Radio
 
+# Just Kiddin
+justkiddin:
+  title: "JK: Just Kiddin'"
+  author: "Phantom Radio"
+  link: https://blog.josh.me.uk/justkiddin
+  email: 
+  art:
+  category: Technology
+  copyright: "Phantom Media 2021"
+  explicit: "No"
+  subtitle: "Join Jess and Kaden as they chat about nothing in particular"
+  summary: >
+    == LIVE 6-8 Every Wednesday ==
+    Join Jess and Kaden as they chat about nothing in particular

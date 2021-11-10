@@ -21,7 +21,7 @@ layout: default
 {% unless page.artwork == Null %}<img height=auto width="200" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;" src="{{page.artwork}}">{% endunless %}
 {% for roles in page.people %}
 {% for role in roles %}
-<p style="text-align: center; margin: 0;">{% if role[0] == "Host" or role[0] == "Hosts" %}Hosted by {% elsif role[0] == "Guest" or role[0] == "Guests" %}With {% else %}{{ role[0] }}: {% endif %}{% for i in role[1] %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>
+<p style="text-align: center; margin: 0;">{% if role[0] == "Host" or role[0] == "Hosts" %}Hosted by {% elsif role[0] == "Guest" or role[0] == "Guests" %}With {% elsif role[0] == "Producer" or role[0] == "Producers" %}Produced by {% else %}{{ role[0] }}: {% endif %}{% for i in role[1] %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>
 {% endfor %}
 {% endfor %}
 <!--{% unless page.hosts == Null %}<p style="text-align: center; margin-bottom: 0;">Hosted by {% for i in page.hosts %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endunless %}
@@ -47,6 +47,10 @@ layout: default
   <a href="https://instagram.com/slletshow"><i class="svg-icon instagram"></i></a>
   <a href="https://twitter.com/slletshow"><i class="svg-icon twitter"></i></a>
   <a href="mailto:slletshow@gmail.com"><i class="svg-icon email"></i></a>
+</div>
+{% elsif page.categories contains "justkiddin" %}
+<div style="text-align:center;">
+    <a href="/slletshow/rss"><i class="svg-icon rss"></i></a>
 </div>
 {% endif %}
 <div class="entry">

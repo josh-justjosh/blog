@@ -5,20 +5,20 @@ episode: 3
 season: 1
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
 people: ['Host':['Josh Brunning', 'Dan Jellicoe'], 'Guests': ['Fred Jackson','Mason Carter','Ross Gilmour']]
-mp3: 
-filelength: 121118720
-duration: 7569
+mp3: https://www.dropbox.com/s/zxplsmf4qjk3p2s/03.mp3?raw=1
+filelength: 118554624
+duration: 7409
 explicit: No
 
 layout: podcast
 date: 2021-11-10 15:00 +0000
-categories: slletshow radio live
+categories: slletshow podcast
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: Host
 permalink: /slletshow/3
 ---
 
-<div style="text-align: center; margin: 15px 0; padding: 0"><iframe style="width: 75%; height: 60px; border: 0;" src="https://player.shoutca.st/?username=phantommedia"></iframe></div>
+This week, Dan and Josh were joined by Mason from the gym and Ross, as well as producer Fred as usual. They discussed Josh's national radio show, Dan being the face of the university - again and Fred brought buzzers.
 
 ## Where to Listen
 * [Listen Live](https://phantom-media.co.uk/phantom-radio/)

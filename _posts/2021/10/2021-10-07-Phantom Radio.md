@@ -37,6 +37,12 @@ artwork: https://pbs.twimg.com/profile_images/915197631269408768/wbOWmwcI_400x40
         <td>Josh Brunning, Dan Jellicoe and Guests</td>
     </tr>
     <tr>
+        <td>Wednesday</td>
+        <td>18:00 – 20:00</td>
+        <td>JK: Just Kiddin’</td>
+        <td>Jess Brough and Kaden Langford</td>
+    </tr>
+    <tr>
         <td>Friday</td>
         <td>16:00 - 18:00</td>
         <td>Drive Time with Jess, Jack and Anna</td>

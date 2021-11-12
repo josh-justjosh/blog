@@ -7,7 +7,7 @@ date: 2021-12-31
 <!--<img src="/images/Shared Content/SLLET radio wide.png">-->
 <h1>{{page.title}}</h1>
 <div style="text-align:center;">
-  <a href="/slletshow/rss"><i class="svg-icon rss"></i></a>
+  <a href="/justkiddin/rss"><i class="svg-icon rss"></i></a>
   <!--<a href="https://podcasts.apple.com/us/podcast/the-sllet-radio-show/id1587759816"><i class="svg-icon apple-podcasts"></i></a>
   <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82ZDE5MzFkNC9wb2RjYXN0L3Jzcw"><i class="svg-icon google-podcasts"></i></a>
   <a href="https://pca.st/bvsgaixz"><i class="svg-icon pocketcasts"></i></a>

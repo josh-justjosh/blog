@@ -14,7 +14,7 @@ people: ['Host':'Josh Brunning']
 layout: podcast
 date: 2021-09-28 02:31 +0100
 categories: slletshow podcast
-elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
+elsewhere: <a href="http://sllet.co.uk/show/0">SLLET</a>
 roles: Host
 permalink: /slletshow/0
 ---

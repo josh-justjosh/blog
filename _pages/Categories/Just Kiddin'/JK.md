@@ -32,7 +32,7 @@ date: 2021-12-31
       <a href="{{ site.baseurl }}{{ post.url }}">
           {% assign titlelc = post.title | downcase %}
           {% assign showlc = post.show | downcase %}
-          <h1 style="margin: 0;">{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}"{{ post.title }}"{% endunless %}</h1><div>
+          <h1 style="margin: 0;">{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ post.title }}{% endunless %}</h1><div>
           <p class="post_date">{{ post.date | date: "%e %B %Y" }}</p>
         </div>
       </a>

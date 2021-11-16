@@ -3,13 +3,14 @@ layout: page
 permalink: /categories/
 title: Categories
 date: 2021-12-31
+last_modified_at: 2021-11-16 15:00 +0000
 ---
 
 <div id="archives">
 {% assign sorted_cats = site.categories | sort %}
 {% for category in sorted_cats %}
 {% capture category_name %}{{ category | first }}{% endcapture %}
-  {% unless category_name == "slletshow" %}
+  {% unless 'slletshow jjadrive justkiddin' contains category_name %}
   {% assign posts = false %}
   <div class="archive-group">
     <div id="#{{ category_name | slugize }}"></div>
@@ -19,7 +20,9 @@ date: 2021-12-31
     {% for post in site.categories[category_name] %}
     {% unless post.hidden == true %}
     <article class="archive-item">
-      <p><center><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{% if category_name == "podcast" %}{{post.show}}: {% unless post.episode == Null %}#{{post.episode}}: {% endunless %}{% endif %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</center></p>
+      {% assign titlelc = post.title | downcase %}
+      {% assign showlc = post.show | downcase %}
+      <p><center><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{% if category_name == "podcast" %}{{ post.show }}: {% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ post.title }}{% endunless %}{% else %}{{post.title}}{% endif %}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</center></p>
     </article>
     {% assign posts = true %}
     {% endunless %}

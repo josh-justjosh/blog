@@ -26,7 +26,7 @@ date: 2021-12-31
         {% if post.categories contains "podcast" or post.categories contains "radio" %}
           {% assign titlelc = post.title | downcase %}
           {% assign showlc = post.show | downcase %}
-          <h2 style="margin: 0;">{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}"{{ post.title }}"{% endunless %}</h2>
+          <h2 style="margin: 0;">{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ post.title }}{% endunless %}</h2>
         {% endif %}
       </a>
       <div class="post-elsewhere">
@@ -60,7 +60,6 @@ date: 2021-12-31
       </audio>
     </div>
       {% endif %}
-      {% if post.categories contains "podcast" or post.categories contains "radio" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Show Notes</a>{% elsif post.categories contains "video" or post.categories contains "live" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
       {% unless post.artwork <> Null %}
       <div class="post-roles">
         {% if post %}
@@ -74,6 +73,7 @@ date: 2021-12-31
         {% endfor %}
       </div>
       {% endunless %}
+      {% if post.categories contains "podcast" or post.categories contains "radio" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Show Notes</a>{% elsif post.categories contains "video" or post.categories contains "live" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
     </article>
   {% endunless %}
   {% endfor %}

@@ -13,7 +13,7 @@ explicit: No
 layout: podcast
 date: 2021-11-03 18:22 +0000
 categories: slletshow podcast
-elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
+elsewhere: <a href="http://sllet.co.uk/show/2">SLLET</a>
 roles: Host
 permalink: /slletshow/2
 ---

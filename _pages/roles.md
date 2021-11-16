@@ -26,7 +26,9 @@ date: 2021-12-31
   {% if post.roles contains role %}
   {% unless post.hidden == true %}
   <article class="archive-item">
-    <p><center><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{% if post.categories contains "podcast" %}{{post.show}}: {% unless post.episode == Null %}#{{post.episode}}: {% endunless %}{% endif %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</center></p>
+      {% assign titlelc = post.title | downcase %}
+      {% assign showlc = post.show | downcase %}
+    <p><center><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{% if post.categories contains "podcast" %}{{ post.show }}: {% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ post.title }}{% endunless %}{% else %}{{post.title}}{% endif %}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</center></p>
     </article>
     {% assign posts = true %}
   {% endunless %}

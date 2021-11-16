@@ -15,7 +15,7 @@ layout: podcast
 date: 2021-09-28 02:31 +0100
 categories: slletshow podcast
 elsewhere: <a href="http://sllet.co.uk/show/0">SLLET</a>
-roles: Host
+roles: ['Producer','Host']
 permalink: /slletshow/0
 ---
 

@@ -11,7 +11,7 @@ date: 2021-10-27
 last_modified_at: 2021-10-27 22:52 +0100
 categories: slletshow
 elsewhere: <a href="http://sllet.co.uk/show/1">SLLET</a>
-roles: Host
+roles: [Host, Producer]
 permalink: /slletshow/1
 ---
 

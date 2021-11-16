@@ -14,7 +14,7 @@ layout: podcast
 date: 2021-11-10 15:00 +0000
 categories: slletshow podcast
 elsewhere: <a href="http://sllet.co.uk/show/3">SLLET</a>
-roles: Host
+roles: [Host, Producer]
 permalink: /slletshow/3
 ---
 

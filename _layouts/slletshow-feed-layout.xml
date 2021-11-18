@@ -1,0 +1,53 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.slletshow.title }}</title>
+    <link>{{ site.slletshow.link }}</link>
+    <itunes:author>{{ site.slletshow.author }}</itunes:author>
+    <copyright>{{ site.sllet.copyright }}</copyright>
+    <language>en-GB</language>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <itunes:category text="{{ site.slletshow.category }}">
+      {% for subcategory in site.slletshow.subcategories %}  <itunes:category text="{{ subcategory }}"/>{% endfor %}
+    </itunes:category>
+    <itunes:explicit>{{ site.slletshow.explicit }}</itunes:explicit>
+    <itunes:image href="{{ site.slletshow.art }}"/>
+    <itunes:subtitle>{{ site.slletshow.subtitle }}</itunes:subtitle>
+    <description>{{ site.slletshow.summary }}</description>
+    <itunes:summary>{{ site.slletshow.summary }}</itunes:summary>
+    <itunes:owner>
+      <itunes:name>{{ site.slletshow.author }}</itunes:name>
+      <itunes:email>{{ site.slletshow.email }}</itunes:email>
+    </itunes:owner>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.categories.slletshow %}
+      {% if post.categories contains "podcast"%}<item>
+      <title>{{ site.slletshow.title }}: {% assign titlelc = post.title | downcase %}{% assign showlc = post.show | downcase %}{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}"{{ post.title }}"{% endunless %}</title>
+      <description>{{ post.excerpt | strip_html }}</description>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <enclosure
+        url="{{ post.mp3 }}"
+        length="{{ post.filelength | round }}"
+        type="audio/mp3"/>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid>{{ site.url }}{{ post.url }}</guid>
+      <itunes:title>{{ post.title }}</itunes:title>
+      {% unless post.episode == Null %}<itunes:episode>{{ post.episode }}</itunes:episode>{% endunless %}
+      {% unless post.season == Null %}<itunes:season>{{ post.season }}</itunes:season>{% endunless %}
+      {% unless post.type == Null %}<itunes:episodeType>{{ post.type }}</itunes:episodeType>{% endunless %}
+      <itunes:author>{{ site.slletshow.author }}</itunes:author>
+      <itunes:subtitle>{{ post.excerpt | strip_html }}</itunes:subtitle>
+      <itunes:summary>{{ post.excerpt | strip_html }}</itunes:summary>
+      <itunes:duration>{{ post.duration }}</itunes:duration>
+      <itunes:explicit>{% if post.explicit %}yes{% else %}no{% endif %}</itunes:explicit>
+      <content:encoded>
+        <![CDATA[{{post.content}}]]>
+      </content:encoded>
+      <itunes:image href="{{ post.artwork }}"/>
+      </item>{% endif %}{% endfor %}
+  </channel>
+</rss>

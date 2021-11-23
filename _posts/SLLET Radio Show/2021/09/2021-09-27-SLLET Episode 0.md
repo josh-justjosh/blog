@@ -17,6 +17,7 @@ categories: slletshow podcast
 elsewhere: <a href="http://sllet.co.uk/show/0">SLLET</a>
 roles: ['Producer','Host']
 permalink: /slletshow/0
+hidden: true
 ---
 
 ## Where to Listen

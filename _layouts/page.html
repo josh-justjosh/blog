@@ -3,7 +3,11 @@ layout: default
 ---
 
 <article class="page">
-
+  {% if page.hidden == true %}
+      <div class="post-hidden">
+        <p class="split">This Page is Unlisted</p>
+      </div>
+      {% endif %}
   <h1>{{ page.title }}</h1>
   {% if page.date contains "00:00" %}
   <p class="author_title" id="lastupdated" datetime="{{ last_modified_at | date_to_xmlschema }}">{{ page.date | date: "%A, %e&nbsp;%B&nbsp;%Y" }}</p>

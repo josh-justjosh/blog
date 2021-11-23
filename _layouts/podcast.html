@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{% if page.hidden == true %}
+      <div class="post-hidden">
+        <p class="split">This Page is Unlisted</p>
+      </div>
+      {% endif %}
 <h1 style="margin-bottom: 0;">{% if page.categories contains "slletshow" %}<a href="http://sllet.co.uk/show">{{ page.show }}</a>{% else %}{{page.show}}{% endif %}</h1>
 {% assign titlelc = page.title | downcase %}
 {% assign showlc = page.show | downcase %}

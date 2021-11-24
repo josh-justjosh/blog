@@ -8,7 +8,7 @@ people: ['Host':['<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brun
 mp3: 
 filelength: 
 duration: 
-explicit: No
+explicit: Yes
 
 layout: podcast
 date: 2021-11-24 15:00 +0000

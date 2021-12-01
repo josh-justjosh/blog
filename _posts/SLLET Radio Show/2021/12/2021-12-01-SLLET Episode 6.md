@@ -4,23 +4,22 @@ title: "The SLLET Radio Show"
 episode: 6
 season: 1
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
-people: ['Host':['<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brunning</a>', '<a href="http://www.sllet.co.uk/people/danjellicoe">Dan Jellicoe</a>'], 'Guests': ['<a href="http://www.sllet.co.uk/people/fredjackson">Fred Jackson</a>','<a href="http://www.sllet.co.uk/people/masoncarter">Mason Carter</a>','<a href="http://www.sllet.co.uk/people/rossgilmour">Ross Gilmour</a>']]
-names:  ['joshbrunning','danjellicoe','fredjackson','masoncarter','rossgilmour']
-mp3: 
-filelength: 
-duration: 
+people: ['Host':['<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brunning</a>', '<a href="http://www.sllet.co.uk/people/danjellicoe">Dan Jellicoe</a>'], 'Guests': ['<a href="http://www.sllet.co.uk/people/fredjackson">Fred Jackson</a>','<a href="http://www.sllet.co.uk/people/masoncarter">Mason Carter</a>','<a href="http://www.sllet.co.uk/people/rossgilmour">Ross Gilmour</a>','<a href="http://www.sllet.co.uk/people/alexanderwuytjens">Alexander Wuytjens</a>','<a href="http://www.sllet.co.uk/people/zsomborszoke">Zsombor Szőke</a>']]
+names:  ['joshbrunning','danjellicoe','fredjackson','masoncarter','rossgilmour','alexanderwuytjens','zsomborszoke']
+mp3: https://www.dropbox.com/s/f1kg5l7ahubssnc/06.mp3?raw=1
+filelength: 305369088
+duration: 7634
 explicit: No
 
 layout: podcast
 date: 2021-12-01 15:00 +0000
-categories: slletshow radio live
+categories: slletshow podcast
 elsewhere: <a href="http://sllet.co.uk/show/6">SLLET</a>
 roles: Host
 permalink: /slletshow/6
-hidden: true
 ---
 
-<div style="text-align: center; margin: 15px 0; padding: 0"><iframe style="width: 75%; height: 60px; border: 0;" src="https://player.shoutca.st/?username=phantommedia"></iframe></div>
+Busy studio this week, even less prep than usual (we had done some but it dissapeared on us) and Dan was back on stage.
 
 ## Where to Listen
 * [Listen Live](https://phantom-media.co.uk/phantom-radio/)

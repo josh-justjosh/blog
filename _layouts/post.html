@@ -20,7 +20,7 @@ layout: default
     var last_modified_at = new Date("{% if page.last_modified_at %}{{ page.last_modified_at }}{% else %}{{ page.date }}{% endif %}").getTime();
     var lm_date = new Date(last_modified_at)
     var out = lm_date.toLocaleString('default', options);
-    document.getElementById("lastupdated").innerHTML = '{{site.author}}  ·  {% if page.last_modified_at %}Last Updated: {% endif %}'+out
+    document.getElementById("lastupdated").innerHTML = '{% if page.people == "" %}{{page.author}}  ·  {% endif %}{% if page.last_modified_at %}Last Updated: {% endif %}'+out
     </script>
     <div class="post-tags">
       {% if post %}
@@ -43,6 +43,15 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
+
+  {% unless page.people == Nil %}
+    <h6>Credits:</h6>
+    {% for roles in page.people %}
+    {% for role in roles %}
+    <p style="text-align: center; margin: 0;">{% if role[0] == "Host" or role[0] == "Hosts" %}Hosted by {% elsif role[0] == "Guest" or role[0] == "Guests" %}With {% elsif role[0] == "Producer" or role[0] == "Producers" %}Produced by {% else %}{{ role[0] }}: {% endif %}{% for i in role[1] %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>
+    {% endfor %}
+    {% endfor %}
+    {% endunless %}
 
   <div class="post-roles">
     {% if post %}

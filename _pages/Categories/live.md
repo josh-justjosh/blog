@@ -59,6 +59,10 @@ date: 2021-12-31
         Your browser does not support the audio element.
       </audio>
     </div>
+    {% else %}
+    <div class="entry">
+        {{ post.excerpt }}
+      </div>
       {% endif %}
       {% unless post.artwork <> Null %}
       <div class="post-roles">

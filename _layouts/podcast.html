@@ -6,7 +6,7 @@ layout: default
         <p class="split">This Page is Unlisted</p>
       </div>
       {% endif %}
-<h1 style="margin-bottom: 0;">{% if page.categories contains "slletshow" %}<a href="http://sllet.co.uk/show">{{ page.show }}</a>{% else %}{{page.show}}{% endif %}</h1>
+<h1 style="margin-bottom: 0;">{% if page.categories contains "slletshow" %}<a href="http://sllet.co.uk/show">{{ page.show }}</a>{% elsif page.categories contains "justkiddin" %}<a href="/justkiddin">{{ page.show }}</a>{% else %}{{page.show}}{% endif %}</h1>
 {% assign titlelc = page.title | downcase %}
 {% assign showlc = page.show | downcase %}
 <h2 style="margin: 0;">{% unless page.season == Null %}Season {{ page.season }}{% endunless %}{% unless page.season == Null or page.episode == Null and titlelc == showlc %}: {% endunless %}{% unless page.episode == Null %}#{{ page.episode }}{% endunless %}{% unless page.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ page.title }}{% endunless %}</h2>

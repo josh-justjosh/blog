@@ -2,7 +2,7 @@
 show: 'The SLLET Radio Show'
 title: "The SLLET Radio Show"
 episode: 1
-season: 1
+season: 
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
 people: ['Host':['Josh Brunning', 'Dan Jellicoe'], 'Guests': ['Fred Jackson', 'Zsombor Szőke']]
 

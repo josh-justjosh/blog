@@ -15,7 +15,7 @@ layout: podcast
 date: 2021-12-08 15:00 +0000
 categories: slletshow radio live
 elsewhere: <a href="http://sllet.co.uk/show/7">SLLET</a>
-roles: Host Producer
+roles: [Host, Producer]
 permalink: /slletshow/7
 hidden: true
 ---

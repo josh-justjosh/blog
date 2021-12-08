@@ -4,7 +4,7 @@ title: "The SLLET Radio Show"
 episode: 7
 season: 
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
-people: ['Host':['<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brunning</a>','<a href="http://www.sllet.co.uk/people/danjellicoe">Dan Jellicoe</a>'], 'Guests': ['<a href="http://www.sllet.co.uk/people/fredjackson">Fred Jackson</a>','<a href="http://www.sllet.co.uk/people/maxrunacres">Max Runacres</a>','<a href="http://www.sllet.co.uk/people/beckyfarrar">Becky Farrar</a>','<a href="http://www.sllet.co.uk/people/chrisrice">Chris Rice</a>']]
+people: ['Host':['<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brunning</a>','<a href="http://www.sllet.co.uk/people/danjellicoe">Dan Jellicoe</a>'],'With Special Guest':'<a href="/people/bensams">Ben Sams</a>',  'Guests': ['<a href="http://www.sllet.co.uk/people/fredjackson">Fred Jackson</a>','<a href="http://www.sllet.co.uk/people/maxrunacres">Max Runacres</a>','<a href="http://www.sllet.co.uk/people/beckyfarrar">Becky Farrar</a>','<a href="http://www.sllet.co.uk/people/chrisrice">Chris Rice</a>']]
 names:  ['joshbrunning','danjellicoe','fredjackson','maxrunacres','beckyfarrar','chrisrice']
 mp3: 
 filelength: 

@@ -2,7 +2,6 @@
 layout: default
 permalink: /categories/posts
 title: Posts
-date: 2021-12-31
 ---
 <head>
   <meta http-equiv="refresh" content=".0; URL=https://blog.josh.me.uk/posts" />

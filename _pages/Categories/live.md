@@ -2,7 +2,6 @@
 layout: default
 permalink: /live
 title: The Live Page
-date: 2021-12-31
 ---
 {% assign posts = false %}
 <h1>{{page.title}}</h1>

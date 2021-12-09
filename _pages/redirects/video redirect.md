@@ -2,7 +2,6 @@
 layout: default
 permalink: /categories/videos
 title: Videos
-date: 2021-12-31
 ---
 <head>
   <meta http-equiv="refresh" content=".0; URL=https://blog.josh.me.uk/videos" />

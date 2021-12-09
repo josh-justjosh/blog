@@ -2,7 +2,6 @@
 layout: page
 permalink: /roles/
 title: Roles
-date: 2021-12-31
 ---
 
 {% assign roles = '' %}

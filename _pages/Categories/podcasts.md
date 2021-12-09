@@ -2,7 +2,6 @@
 layout: default
 permalink: /podcasts
 title: Podcasts
-date: 2021-12-31
 ---
 
 <h1>{{page.title}}</h1>

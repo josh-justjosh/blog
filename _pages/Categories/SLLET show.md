@@ -2,7 +2,6 @@
 layout: default
 permalink: /slletshow/
 title: The SLLET Radio Show
-date: 2021-12-31
 ---
 <img src="/images/SLLET radio wide.png">
 <!--<h1>{{page.title}}</h1>-->

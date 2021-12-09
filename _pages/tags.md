@@ -2,7 +2,6 @@
 layout: page
 permalink: /tags/
 title: Tags
-date: 2021-12-31
 ---
 
 

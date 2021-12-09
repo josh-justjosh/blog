@@ -2,7 +2,6 @@
 layout: default
 permalink: /justkiddin
 title: "JK: Just Kiddin'"
-date: 2021-12-31
 ---
 <!--<img src="/images/Shared Content/SLLET radio wide.png">-->
 <h1>{{page.title}}</h1>

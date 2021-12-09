@@ -4,7 +4,6 @@ title: "University of Derby Carol Service 2021"
 date: 2021-12-09 17:15 +0000
 categories: radio live
 roles: Continuity Announcer
-hidden: true
 ---
 
 <div style="text-align: center; margin: 15px 0; padding: 0"><iframe style="width: 75%; height: 60px; border: 0;" src="https://player.shoutca.st/?username=phantommedia"></iframe></div>

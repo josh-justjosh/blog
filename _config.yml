@@ -105,6 +105,19 @@ exclude:
   - README.md
   - CNAME
 
+# Meta Podcast
+podcast:
+  title: "Josh Brunning - Podcasts"
+  author: "Josh Brunning"
+  link: https://blog.josh.me.uk/
+  email: hello@josh.me.uk
+  art: https://blog.josh.me.uk/images/Shared%20Content/trains%20large.jpg
+  category: Technology
+  copyright: "Josh Brunning 2021"
+  explicit: "No"
+  subtitle: "All of the podcasts Josh has appeared on"
+  summary: "All of the podcasts Josh has appeared on"
+
 # SLLETshow
 slletshow:
   title: "The SLLET Radio Show"

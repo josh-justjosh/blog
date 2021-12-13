@@ -6,5 +6,5 @@ categories: radio
 roles: Continuity Announcer
 mp3: "https://www.dropbox.com/s/uh6ixkfrp3sm8is/2021-12-09%20Christmas%20Service.mp3?raw=1"
 youtube: SF_yRHHI3OQ
-excerpt: mp3
+show-excerpt: mp3
 ---

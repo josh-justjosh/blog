@@ -1,0 +1,54 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.podcast.title }}</title>
+    <link>{{ site.podcast.link }}</link>
+    <itunes:author>{{ site.podcast.author }}</itunes:author>
+    <copyright>{{ site.sllet.copyright }}</copyright>
+    <language>en-GB</language>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <itunes:category text="{{ site.podcast.category }}">
+      {% for subcategory in site.podcast.subcategories %}  <itunes:category text="{{ subcategory }}"/>{% endfor %}
+    </itunes:category>
+    <itunes:explicit>{{ site.podcast.explicit }}</itunes:explicit>
+    <itunes:image href="{{ site.podcast.art }}"/>
+    <itunes:subtitle>{{ site.podcast.subtitle }}</itunes:subtitle>
+    <description>{{ site.podcast.summary }}</description>
+    <itunes:summary>{{ site.podcast.summary }}</itunes:summary>
+    <itunes:owner>
+      <itunes:name>{{ site.podcast.author }}</itunes:name>
+      <itunes:email>{{ site.podcast.email }}</itunes:email>
+    </itunes:owner>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts %}
+      {% unless post.hidden == true %}
+      {% if post.mp3 <> Nil %}<item>
+      <title>{{ post.show }}: {% assign titlelc = post.title | downcase %}{% assign showlc = post.show | downcase %}{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ post.title }}{% endunless %}</title>
+      <description>{{ post.excerpt | strip_html }}</description>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <enclosure
+        url="{{ post.mp3 }}"
+        length="{{ post.filelength | round }}"
+        type="audio/mp3"/>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid>{{ site.url }}{{ post.url }}</guid>
+      <itunes:title>{{ post.title }}</itunes:title>
+      {% unless post.episode == Null %}<itunes:episode>{{ post.episode }}</itunes:episode>{% endunless %}
+      {% unless post.season == Null %}<itunes:season>{{ post.season }}</itunes:season>{% endunless %}
+      {% unless post.type == Null %}<itunes:episodeType>{{ post.type }}</itunes:episodeType>{% endunless %}
+      <itunes:author>{{ site.podcast.author }}</itunes:author>
+      <itunes:subtitle>{{ post.excerpt | strip_html }}</itunes:subtitle>
+      <itunes:summary>{{ post.excerpt | strip_html }}</itunes:summary>
+      <itunes:duration>{{ post.duration }}</itunes:duration>
+      <itunes:explicit>{% if post.explicit %}yes{% else %}no{% endif %}</itunes:explicit>
+      <content:encoded>
+        <![CDATA[{{post.content}}]]>
+      </content:encoded>
+      <itunes:image href="{{ post.artwork }}"/>
+      </item>{% endif %}{% endunless %}{% endfor %}
+  </channel>
+</rss>

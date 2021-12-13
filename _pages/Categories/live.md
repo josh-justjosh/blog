@@ -52,14 +52,14 @@ title: The Live Page
       </div>
       {% endunless %}
       {% if post.mp3 <> Null and post.youtube <> Null %}
-    {% if post.excerpt == 'mp3' %}
+    {% if post.show-excerpt == 'mp3' %}
     <div style="text-align:center">
       <audio controls style="width: 75%;">
         <source src="{{ post.mp3 }}" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
       </div>
-      {% elsif post.excerpt == 'youtube' %}
+      {% elsif post.show-excerpt == 'youtube' %}
       <iframe width="100%" height="400em" src="https://www.youtube.com/embed/{{ post.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       {% endif %}
      {% else %}

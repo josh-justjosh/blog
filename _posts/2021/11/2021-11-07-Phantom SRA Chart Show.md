@@ -9,6 +9,9 @@ categories: radio
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: ['Host', 'Producer']
 artwork: https://pbs.twimg.com/profile_images/915197631269408768/wbOWmwcI_400x400.jpg
+filelength: 82330856
+duration: 7202
+explicit: True
 ---
 
 <img src="/images/SRAxBBCIntro.png">

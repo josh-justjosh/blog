@@ -36,7 +36,7 @@ layout: null
         type="audio/mp3"/>
       <link>{{ site.url }}{{ post.url }}</link>
       <guid>{{ site.url }}{{ post.url }}</guid>
-      <itunes:title>{{ post.title }}</itunes:title>
+      <itunes:title>{% unless post.show == Nil %}{{ post.show }}: {% endunless %}{{ post.title }}</itunes:title>
       {% unless post.episode == Null %}<itunes:episode>{{ post.episode }}</itunes:episode>{% endunless %}
       {% unless post.season == Null %}<itunes:season>{{ post.season }}</itunes:season>{% endunless %}
       {% unless post.type == Null %}<itunes:episodeType>{{ post.type }}</itunes:episodeType>{% endunless %}

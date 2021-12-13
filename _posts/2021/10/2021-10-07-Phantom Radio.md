@@ -1,8 +1,6 @@
 ---
 show: 'Phantom Radio'
 title: 'Phantom Radio'
-artwork: Null
-mp3: 
 people: ['Head of Radio':'Alex Wood','Head of Music':'Anna Alexander','Technical Manager':'Jack Holcombe','Assistant Technical Managers':["Josh Brunning", "Lux O'Neill-Manning"]]
 layout: podcast
 date: 2021-09-30

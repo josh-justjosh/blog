@@ -11,14 +11,17 @@ title: Videos
     <article style="padding: 1em;" class="post">
       <a href="{{ site.baseurl }}{{ post.url }}">
         <h1 style="margin-top: 0;">{{ post.title }}</h1>
-
         <div>
           <p class="post_date">{{ post.date | date: "%e %B %Y" }}</p>
         </div>
       </a>
       {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
       <div class="entry">
-        {{ post.excerpt }}
+      {% if post.youtube <> Null %}
+      <iframe width="100%" height="400em" src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {% else %}
+      {{ post.excerpt }}
+      {% endif %}
       </div>
       <div class="post-roles">
         {% if post %}

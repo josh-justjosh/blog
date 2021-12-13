@@ -2,7 +2,6 @@
 layout: page
 permalink: /categories/
 title: Categories
-last_modified_at: 2021-11-16 15:00 +0000
 ---
 
 <div id="archives">

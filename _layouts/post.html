@@ -41,6 +41,17 @@ layout: default
   </div>
     
   <div class="entry">
+      {% if page.mp3 <> Null %}
+      <div style="text-align:center">
+      <audio controls style="width: 75%;">
+        <source src="{{ page.mp3 }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      </div>
+      {% endif %}
+      {% if page.youtube <> Null %}
+      <iframe width="100%" height="400em" src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {% endif %}
     {{ content }}
   </div>
 

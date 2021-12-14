@@ -13,4 +13,4 @@ duration: 7202
 explicit: True
 ---
 
-<img src="/images/SRAxBBCIntro.png">
+<img src="https://blog.josh.me.uk/images/SRAxBBCIntro.png">

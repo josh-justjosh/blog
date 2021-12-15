@@ -10,7 +10,8 @@ mp3:
 filelength: 
 duration: 
 explicit: No
-layout: radio live
+
+layout: podcast
 date: 2021-12-15 15:00 +0000
 categories: slletshow radio live
 elsewhere: <a href="http://sllet.co.uk/show/8">SLLET</a>

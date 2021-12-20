@@ -4,7 +4,8 @@ title: "The SLLET Radio Show"
 episode: 8
 season: 
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
-people: ['Host':['<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brunning</a>', '<a href="http://www.sllet.co.uk/people/danjellicoe">Dan Jellicoe</a>'], 'Guests': ['<a href="http://www.sllet.co.uk/people/jackholcombe">Jack Holcombe</a>',"<a href='http://www.sllet.co.uk/people/luxoneillmanning'>Lux O'Neill-Manning</a>"]]
+people: ['Host': ['<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brunning</a>', '<a href="http://www.sllet.co.uk/people/danjellicoe">Dan Jellicoe</a>'], 'Guests': ['<a href="http://www.sllet.co.uk/people/jackholcombe">Jack Holcombe</a>', "<a href='http://www.sllet.co.uk/people/luxoneillmanning'>Lux O'Neill-Manning</a>"]
+    ]
 names:  ['joshbrunning','danjellicoe','luxoneillmanning','jackholcombe']
 mp3: https://www.dropbox.com/s/cmncayxvtgj6zrq/08.mp3?raw=1
 filelength: 165450186

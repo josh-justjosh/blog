@@ -7,7 +7,7 @@ artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?ra
 people: ['Host': ['<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brunning</a>', '<a href="http://www.sllet.co.uk/people/danjellicoe">Dan Jellicoe</a>'], 'Guests': ['<a href="http://www.sllet.co.uk/people/annaalexander">Anna Alexander</a>']]
 names:  ['joshbrunning','danjellicoe','annaalexander']
 mp3: https://www.dropbox.com/s/8cvuku1zqmzmrtd/09.mp3?raw=1
-filelength: 161759232
+filelength: 212042503
 duration: 7166
 explicit: No
 

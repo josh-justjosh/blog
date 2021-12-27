@@ -1,6 +1,6 @@
 ---
 show: 'The SLLET Radio Show'
-title: "The SLLET Radio Show"
+title: "It's Just a Bit of a Nightmare"
 episode: 9
 season: 
 artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1

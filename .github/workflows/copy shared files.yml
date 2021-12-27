@@ -208,22 +208,6 @@ jobs:
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
 
-  Copy_Readme:
-    needs: wait
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Copy readme
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.API_TOKEN_GITHUB }}
-          src_path: '/README.md'
-          dst_owner: 'josh-justjosh'
-          dst_repo_name: 'homepage'
-          dst_path: '/'
-          email: '41898282+github-actions[bot]@users.noreply.github.com'
-          name: 'github-actions[bot]'
-
   Copy_Search:
     needs: wait
     runs-on: ubuntu-latest

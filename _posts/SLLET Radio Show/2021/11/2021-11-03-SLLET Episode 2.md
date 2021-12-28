@@ -3,10 +3,10 @@ show: 'The SLLET Radio Show'
 title: "The SLLET Radio Show"
 episode: 2
 season: 
-artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
+artwork: '/images/SLLET radio square.png'
 people: ['Host':['Josh Brunning', 'Dan Jellicoe'], 'Guests': ['Fred Jackson'], 'Also Accidentally Featuring': ['Jess Moore','<a href="http://sllet.co.uk/people/jackholcombe">Jack Holcombe</a>','<a href="http://sllet.co.uk/people/annaalexander">Anna Alexander</a>']]
-mp3: https://www.dropbox.com/s/991ynug1xh6s8nl/02.mp3?raw=1
-filelength: 121118720
+mp3: https://www.dropbox.com/s/991ynug1xh6s8nl/2021-11-03%2002.mp3?raw=1
+filelength: 121751944
 duration: 7569
 explicit: No
 
@@ -14,7 +14,6 @@ layout: podcast
 date: 2021-11-03 18:22 +0000
 categories: slletshow podcast
 elsewhere: <a href="http://sllet.co.uk/show/2">SLLET</a>
-roles: Host
 permalink: /slletshow/2
 ---
 

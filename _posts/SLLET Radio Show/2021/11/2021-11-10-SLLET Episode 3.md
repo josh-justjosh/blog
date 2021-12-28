@@ -3,10 +3,10 @@ show: 'The SLLET Radio Show'
 title: "The SLLET Radio Show"
 episode: 3
 season: 
-artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
+artwork: '/images/SLLET radio square.png'
 people: ['Host':['Josh Brunning', 'Dan Jellicoe'], 'Guests': ['Fred Jackson','Mason Carter','Ross Gilmour']]
-mp3: https://www.dropbox.com/s/zxplsmf4qjk3p2s/03.mp3?raw=1
-filelength: 118554624
+mp3: https://www.dropbox.com/s/zxplsmf4qjk3p2s/2021-11-10%2003.mp3?raw=1
+filelength: 119186926
 duration: 7409
 explicit: No
 

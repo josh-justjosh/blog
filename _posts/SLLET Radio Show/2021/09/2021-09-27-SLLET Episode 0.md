@@ -4,9 +4,9 @@ title: 'How to Find Us'
 type: Trailer
 episode: 
 season: 
-artwork: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
-mp3: https://www.dropbox.com/s/1ixhutvhhh08nwd/00.mp3?raw=1
-filelength: 589824
+artwork: '/images/SLLET radio square.png'
+mp3: https://www.dropbox.com/s/1ixhutvhhh08nwd/2021-09-28%2000.mp3?raw=1
+filelength: 1222897
 duration: 46
 explicit: No
 people: ['Host':'Josh Brunning']
@@ -17,7 +17,6 @@ categories: slletshow podcast
 elsewhere: <a href="http://sllet.co.uk/show/0">SLLET</a>
 roles: ['Producer','Host']
 permalink: /slletshow/0
-hidden: true
 ---
 
 ## Where to Listen

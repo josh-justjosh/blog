@@ -1,4 +1,4 @@
-[![pages-build-deployment](https://github.com/josh-justjosh/homepage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/josh-justjosh/homepage/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/josh-justjosh/blog/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/josh-justjosh/blog/actions/workflows/pages/pages-build-deployment)
 
 Hey there! 👋
 

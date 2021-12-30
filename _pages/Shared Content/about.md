@@ -2,18 +2,21 @@
 layout: page
 title: About
 permalink: /about/
-last_modified_at: 2021-10-19 12:50 +0100
+last_modified_at: 2021-12-30 22:03 +0000
 ---
 
 My name is Josh Brunning and I'm a Human who Does Stuff on The Internet.
 
 My projects currently include:
 
-* This Site
+* My Websites:
+  * [josh.me.uk](https://josh.me.uk/)
+  * [parkruncancellations.com](https://parkruncancellations.com/)
+  * [sllet.co.uk](http://sllet.co.uk)
 * Being a Sound, Light and Live Event Technology student at Derby Uni
 * Vision Mixing [St Werburgh's](https://stwderby.org/) live services here in Derby
 * Being Assistant Tech Manager at [Phantom Radio](https://www.phantom-media.co.uk/phantom-radio), the student radio station
-* Hosting [The SLLET Radio Show](https://blog.josh.me.uk/slletshow) on Phantom. You can listen live from 3-5pm on Wednesdays
+* Hosting [The SLLET Radio Show](http://sllet.co.uk/show) on Phantom. You can listen live from 3-5pm on Wednesdays
 
 And some of my past projects include:
 

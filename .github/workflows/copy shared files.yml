@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{!contains(github.event.head_commit.message, '[Bot]') && !contains(github.event.head_commit.message, '[No Data Refresh]')}}
     steps:
-      - name: Sleep for 30 seconds
-        run: sleep 30s
+      - name: Sleep for 360 seconds (6 mins)
+        run: sleep 360s
         shell: bash
 
   Copy_includes:

@@ -35,9 +35,7 @@ days7.setHours(0, 0, 0, 0); // set to midnight.
 days28.setDate(days28.getDate() - 28); // set to 'now' minus 7 days.
 days28.setHours(0, 0, 0, 0); // set to midnight.
 
-var chart24h = new Chart(document.getElementById('Chart24h'), {
-    type: 'line',
-    data: {
+let data = {
         datasets: [{
             label: 'Listeners',
             backgroundColor: 'rgb(255, 99, 132)',
@@ -48,65 +46,79 @@ var chart24h = new Chart(document.getElementById('Chart24h'), {
                 xAxisKey: 'time'
             }
         }],
+    };
+
+let zoom = {
+    pan: {
+        enabled: true,
+        mode: 'xy',
     },
+    zoom: {
+        mode: 'xy',
+        wheel: {
+            enabled: true
+        },
+        pinch: {
+            enabled: true
+        },
+        drag: {
+            enabled: true
+        }
+    }
+};
+
+let y = {
+    beginAtZero: true,
+    ticks: {
+        precision: 0
+    }
+};
+
+let title = {
+    text: 'Time (UTC)',
+    display: false
+};
+
+let time = {
+    minUnit: 'hour',
+    displayFormats: {
+        hour: 'h aaa',
+        day: 'eee'
+    }
+}
+
+let ticks = {
+    major: {
+        enabled: true,
+    },
+}
+
+let legend = {display: false};
+let font = {size: 20}
+
+var chart24h = new Chart(document.getElementById('Chart24h'), {
+    type: 'line',
+    data: data,
     options: {
         plugins: {
-            zoom: {
-                pan: {
-                    enabled: true,
-                    mode: 'xy',
-                },
-                zoom: {
-                    mode: 'xy',
-                    wheel: {
-                        enabled: true
-                    },
-                    pinch: {
-                        enabled: true
-                    },
-                    drag: {
-                        enabled: true
-                    }
-                }
-            },
-            legend: {
-                display: false
-            },
+            zoom: zoom,
+            legend: legend,
             title: {
                 display: true,
                 text: 'Last 24 hours',
-                font: {
-                        size: 20
-                    }
+                font: font
             }
         },
         scales: {
             x: {
                 type: 'time',
-                title: {
-                    text: 'Time (UTC)',
-                    display: false
-                },
-                time: {
-                    minUnit: 'hour',
-                    displayFormats: {
-                        hour: 'h aaa',
-                        day: 'eee'
-                    }
-                },
-                ticks: {
-                    major: {
-                        enabled: true,
-                    },
-                },
+                title: title,
+                time: time,
+                ticks: ticks,
                 min: hours24,
             },
-            y: {
-                beginAtZero: true,
-                ticks: {
-                    precision: 0
-                }
-            }
+            y: y
+            
         },
         aspectRatio: 2,
         spanGaps: true,
@@ -115,76 +127,27 @@ var chart24h = new Chart(document.getElementById('Chart24h'), {
 
 var chart7d = new Chart(document.getElementById('Chart7d'), {
     type: 'line',
-    data: {
-        datasets: [{
-            label: 'Listeners',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: {{ site.data.PhantomListeners | jsonify }},
-            parsing: {
-                yAxisKey: 'listeners',
-                xAxisKey: 'time'
-            }
-        }],
-    },
+    data: data,
     options: {
         plugins: {
-            zoom: {
-                pan: {
-                    enabled: true,
-                    mode: 'xy',
-                },
-                zoom: {
-                    mode: 'xy',
-                    wheel: {
-                        enabled: true
-                    },
-                    pinch: {
-                        enabled: true
-                    },
-                    drag: {
-                        enabled: true
-                    }
-                }
-            },
-            legend: {
-                display: false
-            },
+            zoom: zoom,
+            legend: legend,
             title: {
                 display: true,
                 text: 'Last 7 days',
-                font: {
-                        size: 20
-                    }
+                font: font
             }
         },
         scales: {
             x: {
                 type: 'time',
-                title: {
-                    text: 'Time (UTC)',
-                    display: false
-                },
-                time: {
-                    minUnit: 'hour',
-                    displayFormats: {
-                        hour: 'h aaa',
-                        day: 'eee'
-                    }
-                },
-                ticks: {
-                    major: {
-                        enabled: true,
-                    },
-                },
+                title: title,
+                time: time,
+                ticks: ticks,
                 min: days7,
             },
-            y: {
-                beginAtZero: true,
-                ticks: {
-                    precision: 0
-                }
-            }
+            y: y
+            
         },
         aspectRatio: 2,
         spanGaps: true,
@@ -193,76 +156,27 @@ var chart7d = new Chart(document.getElementById('Chart7d'), {
 
 var chart28d = new Chart(document.getElementById('Chart28d'), {
     type: 'line',
-    data: {
-        datasets: [{
-            label: 'Listeners',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: {{ site.data.PhantomListeners | jsonify }},
-            parsing: {
-                yAxisKey: 'listeners',
-                xAxisKey: 'time'
-            }
-        }],
-    },
+    data: data,
     options: {
         plugins: {
-            zoom: {
-                pan: {
-                    enabled: true,
-                    mode: 'xy',
-                },
-                zoom: {
-                    mode: 'xy',
-                    wheel: {
-                        enabled: true
-                    },
-                    pinch: {
-                        enabled: true
-                    },
-                    drag: {
-                        enabled: true
-                    }
-                }
-            },
-            legend: {
-                display: false
-            }, 
+            zoom: zoom,
+            legend: legend,
             title: {
                 display: true,
                 text: 'Last 28 days',
-                font: {
-                        size: 20
-                    }
+                font: font
             }
         },
         scales: {
             x: {
                 type: 'time',
-                title: {
-                    text: 'Time (UTC)',
-                    display: false
-                },
-                time: {
-                    minUnit: 'hour',
-                    displayFormats: {
-                        hour: 'h aaa',
-                        day: 'eee'
-                    }
-                },
-                ticks: {
-                    major: {
-                        enabled: true,
-                    },
-                },
+                title: title,
+                time: time,
+                ticks: ticks,
                 min: days28,
             },
-            y: {
-                beginAtZero: true,
-                ticks: {
-                    precision: 0
-                }
-            }
+            y: y
+            
         },
         aspectRatio: 2,
         spanGaps: true,
@@ -270,71 +184,28 @@ var chart28d = new Chart(document.getElementById('Chart28d'), {
 });
 var chartall = new Chart(document.getElementById('Chartall'), {
     type: 'line',
-    data: {
-        datasets: [{
-            label: 'Listeners',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: {{ site.data.PhantomListeners | jsonify }},
-            parsing: {
-                yAxisKey: 'listeners',
-                xAxisKey: 'time'
-            }
-        }],
-    },
+    data: data,
     options: {
         plugins: {
-            zoom: {
-                pan: {
-                    enabled: true,
-                    mode: 'xy',
-                },
-                zoom: {
-                    mode: 'xy',
-                    wheel: {
-                        enabled: true
-                    },
-                    pinch: {
-                        enabled: true
-                    },
-                    drag: {
-                        enabled: true
-                    }
-                }
-            },
-            legend: {
-                display: false
-            }, 
+            zoom: zoom,
+            legend: legend,
             title: {
                 display: true,
                 text: 'All Time',
-                font: {
-                        size: 20
-                    }
+                font: font
             }
         },
         scales: {
             x: {
                 type: 'time',
-                title: {
-                    text: 'Time (UTC)',
-                    display: false
-                },
+                title: title,
                 time: {
                     minUnit: 'week',
                 },
-                ticks: {
-                    major: {
-                        enabled: true,
-                    },
-                },
+                ticks: ticks,
             },
-            y: {
-                beginAtZero: true,
-                ticks: {
-                    precision: 0
-                }
-            }
+            y: y
+            
         },
         aspectRatio: 2,
         spanGaps: true,

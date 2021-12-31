@@ -10,19 +10,8 @@ layout: default
 {% assign titlelc = page.title | downcase %}
 {% assign showlc = page.show | downcase %}
 <h2 style="margin: 0;">{% unless page.season == Null %}Season {{ page.season }}{% endunless %}{% unless page.season == Null or page.episode == Null and titlelc == showlc %}: {% endunless %}{% unless page.episode == Null %}#{{ page.episode }}{% endunless %}{% unless page.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ page.title }}{% endunless %}</h2>
-
-{% if page.date contains "00:00" %}
-      <p class="author_title" id="lastupdated" datetime="{{ last_modified_at | date_to_xmlschema }}">{{ page.date | date: "%A, %e&nbsp;%B&nbsp;%Y" }}</p>
-    {% else %}
-      <p class="author_title" id="lastupdated" datetime="{{ last_modified_at | date_to_xmlschema }}">{{ page.date | date: "%R" }} UTC {{ page.date | date: "%A, %e&nbsp;%B&nbsp;%Y" }}</p>
-    {% endif %}
-    <script>
-    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZoneName: 'short', hour:'2-digit', minute:'2-digit'};
-    var last_modified_at = Date.parse("{% if page.last_modified_at %}{{ page.last_modified_at }}{% else %}{{ page.date }}{% endif %}").getTime();
-    var lm_date = new Date(last_modified_at)
-    var out = lm_date.toLocaleString('default', options);
-    document.getElementById("lastupdated").innerHTML = '{% if page.last_modified_at %}Last Updated: {% endif %}'+out
-    </script>
+{% capture date %}{% if page.last_modified_at %}{{ page.last_modified_at }}{% elsif page.date == Nil %}{{ site.time }}{% else %}{{ page.date }}{% endif %}{% endcapture %}
+<p class="author_title" id="lastupdated" datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%R %A, %e&nbsp;%B&nbsp;%Y" }}</p>
 {% unless page.artwork == Null %}<img height=auto width="200" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 15px;" src="{{page.artwork}}">{% endunless %}
 {% for roles in page.people %}
 {% for role in roles %}

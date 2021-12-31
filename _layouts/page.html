@@ -9,18 +9,8 @@ layout: default
       </div>
       {% endif %}
   <h1>{{ page.title }}</h1>
-  {% if page.date contains "00:00" %}
-  <p class="author_title" id="lastupdated" datetime="{{ last_modified_at | date_to_xmlschema }}">{{ page.date | date: "%A, %e&nbsp;%B&nbsp;%Y" }}</p>
-{% else %}
-  <p class="author_title" id="lastupdated" datetime="{{ last_modified_at | date_to_xmlschema }}">{{ page.date | date: "%R" }} UTC {{ page.date | date: "%A, %e&nbsp;%B&nbsp;%Y" }}</p>
-{% endif %}
-<script>
-let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZoneName: 'short', hour:'2-digit', minute:'2-digit'};
-var last_modified_at = Date.parse("{% if page.last_modified_at %}{{ page.last_modified_at }}{% elsif page.date == Nil %}{{ site.time }}{% else %}{{ page.date }}{% endif %}");
-var lm_date = new Date(last_modified_at)
-var out = lm_date.toLocaleString('default', options);
-document.getElementById("lastupdated").innerHTML = '{{site.author}}  ·  {% if page.last_modified_at %}Last Updated: {% endif %}'+out
-</script>
+  {% capture date %}{% if page.last_modified_at %}{{ page.last_modified_at }}{% elsif page.date == Nil %}{{ site.time }}{% else %}{{ page.date }}{% endif %}{% endcapture %}
+  <p class="author_title" id="lastupdated" datetime="{{ date | date_to_xmlschema }}">{% if page.author == Nil %}{{site.author}}{% else %}{{ page.author }}{% endif %}  ·  {{ date | date: "%R %A, %e&nbsp;%B&nbsp;%Y" }}</p>
   <div class="post-tags">
     {% if post %}
       {% assign categories = post.categories %}

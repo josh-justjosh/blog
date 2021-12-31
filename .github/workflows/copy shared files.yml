@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{!contains(github.event.head_commit.message, '[Bot]') && !contains(github.event.head_commit.message, '[No Data Refresh]')}}
     steps:
-      - name: Wait 30 secs before running
-        uses: jakejarvis/wait-action@master
-        with:
-          time: '30s'
+      - name: Sleep for 30 seconds
+        run: sleep 30s
+        shell: bash
 
-  Copy_includes:
+  Copy_Shared_Files:
+    needs: wait
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -30,11 +30,7 @@ jobs:
           dst_path: '/'
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
-
-  Copy_sass:
-    needs: Copy_includes
-    runs-on: ubuntu-latest
-    steps:
+          
       - uses: actions/checkout@v2
       - name: Copy _sass
         uses: andstor/copycat-action@v3
@@ -46,11 +42,7 @@ jobs:
           dst_path: '/'
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
-
-  Copy_assets:
-    needs: Copy_sass
-    runs-on: ubuntu-latest
-    steps:
+          
       - uses: actions/checkout@v2
       - name: Copy assets
         uses: andstor/copycat-action@v3
@@ -62,11 +54,7 @@ jobs:
           dst_path: '/'
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
-
-  Copy_fonts:
-    needs: Copy_assets
-    runs-on: ubuntu-latest
-    steps:
+          
       - uses: actions/checkout@v2
       - name: Copy fonts
         uses: andstor/copycat-action@v3
@@ -79,10 +67,6 @@ jobs:
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
 
-  Copy_Post_Layout:
-    needs: Copy_fonts
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - name: Copy Post Layout
         uses: andstor/copycat-action@v3
@@ -95,10 +79,6 @@ jobs:
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
 
-  Copy_Page_Layout:
-    needs: Copy_Post_Layout
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - name: Copy Page Layout
         uses: andstor/copycat-action@v3
@@ -111,10 +91,6 @@ jobs:
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
 
-  Copy_Shared_Pages:
-    needs: Copy_Page_Layout
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - name: Copy Shared Pages
         uses: andstor/copycat-action@v3
@@ -127,10 +103,6 @@ jobs:
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
 
-  Copy_Shared_Posts:
-    needs: Copy_Shared_Pages
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - name: Copy Shared Posts
         uses: andstor/copycat-action@v3
@@ -143,10 +115,6 @@ jobs:
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
 
-  Copy_Shared_Images:
-    needs: Copy_Shared_Posts
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - name: Copy Shared Posts
         uses: andstor/copycat-action@v3
@@ -159,10 +127,6 @@ jobs:
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
 
-  Copy_404:
-    needs: Copy_Shared_Images
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - name: Copy 404
         uses: andstor/copycat-action@v3
@@ -175,10 +139,6 @@ jobs:
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
 
-  Copy_Favicon:
-    needs: Copy_404
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - name: Copy favicon
         uses: andstor/copycat-action@v3
@@ -191,10 +151,6 @@ jobs:
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
 
-  Copy_License:
-    needs: Copy_Favicon
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - name: Copy LICENSE
         uses: andstor/copycat-action@v3
@@ -206,11 +162,7 @@ jobs:
           dst_path: '/'
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
-
-  Copy_Search:
-    needs: Copy_License
-    runs-on: ubuntu-latest
-    steps:
+          
       - uses: actions/checkout@v2
       - name: Copy search.json
         uses: andstor/copycat-action@v3
@@ -222,11 +174,7 @@ jobs:
           dst_path: '/'
           email: '41898282+github-actions[bot]@users.noreply.github.com'
           name: 'github-actions[bot]'
-          
-  Copy_Funding:
-    needs: Copy_Search
-    runs-on: ubuntu-latest
-    steps:
+
       - uses: actions/checkout@v2
       - name: Copy funding.yml
         uses: andstor/copycat-action@v3

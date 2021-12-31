@@ -18,6 +18,7 @@ title: The SLLET Radio Show
   <a href="https://instagram.com/slletshow"><i class="svg-icon instagram"></i></a>
   <a href="https://twitter.com/slletshow"><i class="svg-icon twitter"></i></a>
   <a href="mailto:slletshow@gmail.com"><i class="svg-icon email"></i></a>
+  <a href="http://sllet.co.uk"><i class="svg-icon website"></i></a>
 </div>
 <div class="posts">
   {% for post in site.categories['slletshow'] %}

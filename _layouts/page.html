@@ -16,7 +16,7 @@ layout: default
 {% endif %}
 <script>
 let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZoneName: 'short', hour:'2-digit', minute:'2-digit'};
-var last_modified_at = Date.parse("{% if page.last_modified_at %}{{ page.last_modified_at }}{% elsif page.date == Nil %}{{ site.time }}{% else %}{{ page.date }}{% endif %}").getTime();
+var last_modified_at = Date.parse("{% if page.last_modified_at %}{{ page.last_modified_at }}{% elsif page.date == Nil %}{{ site.time }}{% else %}{{ page.date }}{% endif %}");
 var lm_date = new Date(last_modified_at)
 var out = lm_date.toLocaleString('default', options);
 document.getElementById("lastupdated").innerHTML = '{{site.author}}  ·  {% if page.last_modified_at %}Last Updated: {% endif %}'+out

@@ -11,7 +11,7 @@ duration: 7569
 explicit: No
 
 layout: podcast
-date: 2021-11-03 18:22 +0000
+date: 2021-11-03 15:00 +0000
 categories: slletshow podcast
 elsewhere: <a href="http://sllet.co.uk/show/2">SLLET</a>
 permalink: /slletshow/2

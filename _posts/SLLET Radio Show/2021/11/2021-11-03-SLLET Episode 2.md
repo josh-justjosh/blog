@@ -12,7 +12,7 @@ explicit: No
 
 layout: podcast
 date: 2021-11-03 15:00 +0000
-categories: slletshow podcast
+categories: slletshow podcast radio
 elsewhere: <a href="http://sllet.co.uk/show/2">SLLET</a>
 permalink: /slletshow/2
 ---

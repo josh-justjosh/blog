@@ -9,7 +9,7 @@ people: ['Host':['Josh Brunning', 'Dan Jellicoe'], 'Guests': ['Fred Jackson', 'Z
 layout: podcast
 date: 2021-10-27
 last_modified_at: 2021-10-27 22:52 +0100
-categories: slletshow
+categories: slletshow radio
 elsewhere: <a href="http://sllet.co.uk/show/1">SLLET</a>
 roles: [Host, Producer]
 permalink: /slletshow/1

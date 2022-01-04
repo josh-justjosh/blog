@@ -12,7 +12,7 @@ explicit: Yes
 
 layout: podcast
 date: 2021-11-24 15:00 +0000
-categories: slletshow podcast
+categories: slletshow podcast radio
 elsewhere: <a href="http://sllet.co.uk/show/5">SLLET</a>
 roles: [Host, Producer]
 permalink: /slletshow/5

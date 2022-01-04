@@ -3,6 +3,11 @@ layout: default
 ---
 
 <article class="post detailed">
+  {% if page.hidden == true %}
+      <div class="post-hidden">
+        <p class="split">This Page is Unlisted</p>
+      </div>
+      {% endif %}
   <h1>{{ page.title }}</h1>
   {% capture date %}{% if page.last_modified_at %}{{ page.last_modified_at }}{% elsif page.date == Nil %}{{ site.time }}{% else %}{{ page.date }}{% endif %}{% endcapture %}
   <p class="author_title" id="lastupdated" datetime="{{ date | date_to_xmlschema }}">{% if page.author == Nil %}{{site.author}}{% else %}{{ page.author }}{% endif %}  ·  {{ date | date: "%R %A, %e&nbsp;%B&nbsp;%Y" }}</p>
@@ -17,6 +22,7 @@ layout: default
         {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
     </div>
+    <div>
     {% if post %}
       {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
     {% else %}
@@ -25,8 +31,27 @@ layout: default
   </div>
     
   <div class="entry">
-    {{ content }}
-  </div>
+    {% if page.mp3 <> Null %}
+    <div style="text-align:center">
+    <audio controls style="width: 75%;">
+      <source src="{{ page.mp3 }}" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    </div>
+    {% endif %}
+    {% if page.youtube <> Null %}
+    <iframe width="100%" height="400em" src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {% endif %}
+  {{ content }}
+</div>
+{% unless page.people == Nil %}
+  <h6>Credits:</h6>
+  {% for roles in page.people %}
+  {% for role in roles %}
+  <p style="text-align: center; margin: 0;">{% if role[0] == "Host" or role[0] == "Hosts" %}Hosted by {% elsif role[0] == "Guest" or role[0] == "Guests" %}With {% elsif role[0] == "Producer" or role[0] == "Producers" %}Produced by {% else %}{{ role[0] }}: {% endif %}{% for i in role[1] %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>
+  {% endfor %}
+  {% endfor %}
+  {% endunless %}
 
   <div class="post-roles">
     {% if post %}

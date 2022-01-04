@@ -1,5 +1,5 @@
 ---
-layout: podcast
+layout: post
 title: "Phantom Show Trails"
 date: 2022-01-04 13:26 +0000
 categories: radio podcast

@@ -7,7 +7,7 @@ artwork: '/images/SLLET radio square.png'
 people: ['Host': ['<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brunning</a>', '<a href="http://www.sllet.co.uk/people/danjellicoe">Dan Jellicoe</a>']]
 names:  ['joshbrunning','danjellicoe']
 mp3: https://www.dropbox.com/s/c2nhm6mlr50dzsb/2021-12-25%2009-1.mp3?raw=1
-filelength: 1434308
+filelength: 2068084
 duration: 65
 type: Bonus
 explicit: No

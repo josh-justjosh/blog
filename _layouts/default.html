@@ -19,7 +19,7 @@
 
       gtag('config', 'G-7BMP9Z27CZ');
     </script>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+    <title>{% if page.categories contains "podcast" %}{{ site.slletshow.title }}: {% assign titlelc = page.title | downcase %}{% assign showlc = page.show | downcase %}{% unless page.season == Null %}Season {{ page.season }}{% endunless %}{% unless page.season == Null or page.episode == Null and titlelc == showlc %}: {% endunless %}{% unless page.episode == Null %}#{{ page.episode }}{% endunless %}{% unless page.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ page.title }}{% endunless %} - {% else %}{% if page.title %}{{ page.title }} – {% endif %}{% endif %}{{ site.name }}</title>
     {% seo title=false %}
     {% include meta.html %}
 

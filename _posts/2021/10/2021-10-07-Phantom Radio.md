@@ -7,7 +7,6 @@ date: 2021-09-30
 categories: live radio
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: "Assistant Technical Manager"
-permalink: /phantomradio
 artwork: https://pbs.twimg.com/profile_images/915197631269408768/wbOWmwcI_400x400.jpg
 ---
 

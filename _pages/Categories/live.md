@@ -51,7 +51,11 @@ title: The Live Page
         {{ post.excerpt }}
       </div>
       {% endunless %}
-      {% if post.mp3 <> Null and post.youtube <> Null %}
+      {% if post.show-excerpt == 'excerpt' %}
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+    {% elsif post.mp3 <> Null and post.youtube <> Null %}
     {% if post.show-excerpt == 'mp3' %}
     <div style="text-align:center">
       <audio controls style="width: 75%;">

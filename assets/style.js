@@ -29,11 +29,3 @@ function isActuallyDarkTheme() {
   if (getTheme() != getThemePref()) {
     toggleTheme()
   }
-  
-  document.addEventListener(
-    "DOMContentLoaded",  // wait for HTML to load, then we can add the button event.
-    function () {
-      const btn = document.querySelector(".switch");
-      btn.addEventListener("click", toggleTheme)
-    }
-  )

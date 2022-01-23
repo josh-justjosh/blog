@@ -24,12 +24,6 @@ layout: default
 <div class="post-elsewhere">
   {% if page.elsewhere %}<p style="text-align: center;">🔀 from {{page.elsewhere}}</p>{% endif %}
 </div>
-{% unless page.mp3 == Null %}<div style="text-align:center">
-<audio controls style="width: 75%; margin-top: 15px;">
-  <source src="{{ page.mp3 }}" type="audio/mpeg"/>
-  Your browser does not support the audio element.
-</audio>
-</div>{% endunless %}
 {% if page.categories contains "slletshow" %}
 <div style="text-align:center;">
   <a href="http://sllet.co.uk/show/rss"><i class="svg-icon rss"></i></a>
@@ -63,6 +57,15 @@ layout: default
 </div>
 {% endif %}
 <div class="entry">
+  {% unless page.mp3 == Null %}<div style="text-align:center">
+    <audio controls style="width: 75%; margin-top: 15px;">
+      <source src="{{ page.mp3 }}" type="audio/mpeg"/>
+      Your browser does not support the audio element.
+    </audio>
+    </div>{% endunless %}
+    {% if page.youtube <> Null %}<div style="text-align:center">
+    <iframe width="75%" height="400em" src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>{% endif %}
   {{ content }}
 </div>
 

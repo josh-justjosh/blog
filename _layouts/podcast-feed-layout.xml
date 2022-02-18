@@ -50,7 +50,7 @@ layout: null
       <itunes:duration>{{ post.duration }}</itunes:duration>
       <itunes:explicit>{% if post.explicit %}yes{% else %}no{% endif %}</itunes:explicit>
       <content:encoded>
-        <![CDATA[{{post.content}}]]>
+        <![CDATA[{% for roles in post.people %}{% for role in roles %}<p>{% if role[0] == "Host" or role[0] == "Hosts" %}Hosted by {% elsif role[0] == "Guest" or role[0] == "Guests" %}With {% elsif role[0] == "Producer" or role[0] == "Producers" %}Produced by {% else %}{{ role[0] }}: {% endif %}{% for i in role[1] %}{% if forloop.last and forloop.length != 1 %} and {% elsif forloop.first %}{% else %}, {% endif %}{{i}}{% endfor %}</p>{% endfor %}{% endfor %}{{post.content}}]]>
       </content:encoded>
       <itunes:image href="{{ post.artwork }}"/>
       </item>{% endif %}{% endunless %}{% endfor %}

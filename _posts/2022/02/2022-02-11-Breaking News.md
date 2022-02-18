@@ -6,6 +6,7 @@ mp3: https://www.dropbox.com/s/kl8r00lxr9haig2/2022-02-11%20-%20Breaking%20News.
 filelength: 1391320
 duration: 51
 explicit: No
+type: "Bonus"
 people: ['Hosts':'Josh Brunning']
 
 layout: podcast

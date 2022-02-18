@@ -8,4 +8,5 @@ mp3: https://www.dropbox.com/s/943gqdxi4hr4fcu/2022-01-04%20-%20Phantom%20Show%2
 artwork: https://www.dropbox.com/s/fv3ahy90c5ontyc/Phantom.jpg?raw=1
 filelength: 2351687
 duration: 77
+type: "Bonus"
 ---

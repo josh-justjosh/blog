@@ -113,7 +113,7 @@ podcast:
   email: hello@josh.me.uk
   art: https://blog.josh.me.uk/images/Shared%20Content/trains%20large.jpg
   category: Technology
-  copyright: "Josh Brunning 2021"
+  copyright: "Josh Brunning 2022"
   explicit: "No"
   subtitle: "All of the shows and podcasts Josh has appeared on"
   summary: "All of the shows and podcasts Josh has appeared on"
@@ -126,7 +126,7 @@ slletshow:
   email: show@sllet.co.uk
   art: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
   category: Technology
-  copyright: "Phantom Media 2021"
+  copyright: "Phantom Media 2022"
   explicit: "No"
   subtitle: "A show by members of Derby's SLLET team on Phantom Radio"
   summary: >
@@ -141,9 +141,24 @@ justkiddin:
   email: "justkiddinshow@gmail.com"
   art: https://www.dropbox.com/s/buh3cg3wnqjh7xy/JK.jpeg?raw=1
   category: "Society &amp; Culture"
-  copyright: "Phantom Media 2021"
+  copyright: "Phantom Media 2022"
   explicit: "No"
   subtitle: "Join Jess and Kaden as they chat about nothing in particular"
+  complete: yes
   summary: >
-    == LIVE 7-9 Every Thursday ==
     Join Jess and Kaden as they chat about nothing in particular
+
+# Total Knockout
+totalknockout:
+  title: "TK: Total Knockout"
+  author: "Phantom Radio"
+  link: https://blog.josh.me.uk/totalknockout
+  email: "hello@josh.me.uk"
+  art: https://www.dropbox.com/s/fv3ahy90c5ontyc/Phantom.jpg?raw=1
+  category: "Society &amp; Culture"
+  copyright: "Phantom Media 2022"
+  explicit: "No"
+  subtitle: "Join Tom and Kaden as they chat about nothing in particular"
+  summary: >
+    == LIVE 7-9 Every Wednesday ==
+    Join Tom and Kaden as they chat about nothing in particular

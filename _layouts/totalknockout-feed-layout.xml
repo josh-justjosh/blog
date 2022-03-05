@@ -4,31 +4,30 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>{{ site.justkiddin.title }}</title>
-    <link>{{ site.justkiddin.link }}</link>
-    <itunes:author>{{ site.justkiddin.author }}</itunes:author>
+    <title>{{ site.totalknockout.title }}</title>
+    <link>{{ site.totalknockout.link }}</link>
+    <itunes:author>{{ site.totalknockout.author }}</itunes:author>
     <copyright>{{ site.sllet.copyright }}</copyright>
     <language>en-GB</language>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <itunes:category text="{{ site.justkiddin.category }}">
-      {% for subcategory in site.justkiddin.subcategories %}  <itunes:category text="{{ subcategory }}"/>{% endfor %}
+    <itunes:category text="{{ site.totalknockout.category }}">
+      {% for subcategory in site.totalknockout.subcategories %}  <itunes:category text="{{ subcategory }}"/>{% endfor %}
     </itunes:category>
-    <itunes:explicit>{{ site.justkiddin.explicit }}</itunes:explicit>
-    <itunes:image href="{{ site.justkiddin.art }}"/>
-    <itunes:subtitle>{{ site.justkiddin.subtitle }}</itunes:subtitle>
-    <description>{{ site.justkiddin.summary }}</description>
-    <itunes:summary>{{ site.justkiddin.summary }}</itunes:summary>
+    <itunes:explicit>{{ site.totalknockout.explicit }}</itunes:explicit>
+    <itunes:image href="{{ site.totalknockout.art }}"/>
+    <itunes:subtitle>{{ site.totalknockout.subtitle }}</itunes:subtitle>
+    <description>{{ site.totalknockout.summary }}</description>
+    <itunes:summary>{{ site.totalknockout.summary }}</itunes:summary>
     <itunes:owner>
-      <itunes:name>{{ site.justkiddin.author }}</itunes:name>
-      <itunes:email>{{ site.justkiddin.email }}</itunes:email>
+      <itunes:name>{{ site.totalknockout.author }}</itunes:name>
+      <itunes:email>{{ site.totalknockout.email }}</itunes:email>
     </itunes:owner>
-    <itunes:complete>yes</itunes:complete>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.categories.justkiddin %}
+    {% for post in site.categories.totalknockout %}
       {% unless post.hidden == true %}
       {% if post.categories contains "podcast"%}<item>
-      <title>{{ site.justkiddin.title }}: {% assign titlelc = post.title | downcase %}{% assign showlc = post.show | downcase %}{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ post.title }}{% endunless %}</title>
+      <title>{{ site.totalknockout.title }}: {% assign titlelc = post.title | downcase %}{% assign showlc = post.show | downcase %}{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ post.title }}{% endunless %}</title>
       <description>{{ post.excerpt | strip_html }}</description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <enclosure
@@ -41,7 +40,7 @@ layout: null
       {% unless post.episode == Null %}<itunes:episode>{{ post.episode }}</itunes:episode>{% endunless %}
       {% unless post.season == Null %}<itunes:season>{{ post.season }}</itunes:season>{% endunless %}
       {% unless post.type == Null %}<itunes:episodeType>{{ post.type }}</itunes:episodeType>{% endunless %}
-      <itunes:author>{{ site.justkiddin.author }}</itunes:author>
+      <itunes:author>{{ site.totalknockout.author }}</itunes:author>
       <itunes:subtitle>{{ post.excerpt | strip_html }}</itunes:subtitle>
       <itunes:summary>{{ post.excerpt | strip_html }}</itunes:summary>
       <itunes:duration>{{ post.duration }}</itunes:duration>

@@ -2,12 +2,13 @@
 show: 'Phantom Radio'
 title: 'Phantom Radio'
 people: ['Head of Radio':'Alex Wood','Head of Music':'Anna Alexander','Technical Manager':'Jack Holcombe','Assistant Technical Managers':["Josh Brunning", "Lux O'Neill-Manning"]]
-layout: podcast
+layout: post
 date: 2021-09-30
-categories: radio
+categories: post
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: "Assistant Technical Manager"
 artwork: https://pbs.twimg.com/profile_images/915197631269408768/wbOWmwcI_400x400.jpg
+tags: ['Phantom Radio']
 ---
 
 <div style="text-align: center; margin: 15px 0; padding: 0"><iframe style="width: 75%; height: 60px; border: 0;" src="https://player.shoutca.st/?username=phantommedia"></iframe></div>

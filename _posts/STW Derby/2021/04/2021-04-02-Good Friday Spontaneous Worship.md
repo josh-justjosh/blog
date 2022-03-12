@@ -6,4 +6,5 @@ categories: video
 elsewhere: <a href="https://stwderby.org/">St Werb's Derby</a>
 roles: ["Vision Mixer", "Camera Operator"]
 youtube: Hf7hYEYO3t4
+tags: ['Werbs']
 ---

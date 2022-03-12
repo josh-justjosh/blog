@@ -18,7 +18,7 @@ title: Videos
       {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
       <div class="entry">
       {% if post.youtube <> Null %}
-      <iframe width="100%" height="400em" src="https://www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!--{% include youtube.html link=page.youtube %}-->
       {% else %}
       {{ post.excerpt }}
       {% endif %}

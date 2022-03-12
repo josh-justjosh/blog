@@ -44,7 +44,7 @@ title: The Live Page
     <div class="entry">
       {{ post.excerpt }}
       <div style="text-align:center">
-        {% include youtube.html link=page.youtube %}
+        <!--{% include youtube.html link=page.youtube %}-->
       </div>
     </div>
     {% elsif post.show-excerpt == 'mp3' %}
@@ -55,7 +55,7 @@ title: The Live Page
       </audio>
       </div>
       {% elsif post.show-excerpt == 'youtube' %}<div style="text-align:center">
-        {% include youtube.html link=page.youtube %}
+        <!--{% include youtube.html link=page.youtube %}-->
       </div>
       {% else %}
       <div style="text-align:center">
@@ -63,7 +63,7 @@ title: The Live Page
           <source src="{{ post.mp3 }}" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
-        {% include youtube.html link=page.youtube %}
+        <!--{% include youtube.html link=page.youtube %}-->
       </div>
       {% endif %}
      {% else %}
@@ -77,7 +77,7 @@ title: The Live Page
       {% elsif post.youtube <> Null %}{% if post.show-excerpt == 'excerpt+yt' %}
       {{ post.excerpt }}{% endif %}
       <div style="text-align:center">
-        {% include youtube.html link=page.youtube %}
+        <!--{% include youtube.html link=page.youtube %}-->
       </div>{% else %}
       <div class="entry">
         {{ post.excerpt }}

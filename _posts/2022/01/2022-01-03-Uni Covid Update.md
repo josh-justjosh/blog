@@ -1,9 +1,11 @@
 ---
 layout: post
 hidden: true
+categores: 'Post'
 author: University of Derby
 date: 2022-01-03 13:41:00 +0000
 title: University Covid Update - January 2022
+tags: ['Uni']
 ---
 
 We hope you are enjoying the winter break and look forward to welcoming you to campus over the coming days.

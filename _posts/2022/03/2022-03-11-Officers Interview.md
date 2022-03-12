@@ -17,4 +17,4 @@ explicit: No
 type: "Bonus"
 ---
 
-Last night, Alex Wood was joined by 3 of the the newly elected officers for 2022/23 for a quick interview live on Phantom Radio!
+Alex Wood was joined by 3 of the the newly elected officers for 2022/23 for a quick interview live on Phantom Radio!

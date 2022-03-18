@@ -18,7 +18,7 @@ title: Videos
       {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
       <div class="entry">
       {% if post.youtube <> Null %}
-      {% include youtube.html link=page.youtube %}
+      <!--{% include youtube.html link=page.youtube %}-->
       {% else %}
       {{ post.excerpt }}
       {% endif %}

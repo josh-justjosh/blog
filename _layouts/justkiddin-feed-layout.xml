@@ -32,7 +32,7 @@ layout: null
       <description>{{ post.excerpt | strip_html }}</description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <enclosure
-        url="{{ post.mp3 | replace: 'https://', 'https://dts.podtrac.com/redirect.mp3/'}}"
+        url="{{ post.mp3 }}"
         length="{{ post.filelength | round }}"
         type="audio/mp3"/>
       <link>{{ site.url }}{{ post.url }}</link>

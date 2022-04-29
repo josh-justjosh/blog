@@ -5,12 +5,12 @@ categories: video podcast
 youtube: wD4bVgAkz9Y
 roles: ['Executive Producer','Sound','Vision Mixer']
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
-artwork: 'https://www.dropbox.com/s/fv3ahy90c5ontyc/Phantom.jpg?raw=1'
+artwork: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
 layout: podcast
 date: 2022-03-11 20:40 +0000
 tags: ['Phantom Radio','Phantom TV']
 people: ['Host':['Alex Wood'], 'Guests':['Owen Marques','Alexandra Mazilu','Dominic White'], 'Producer': ['Josh Brunning'],'Executive Producers':['Alex Wood','Josh Brunning']]
-mp3: 'https://www.dropbox.com/s/c8xo69pko1b46dl/2022-03-11%20-%20Officer%20Interviews.mp3?raw=1'
+mp3: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/2022-03-11+-+Officer+Interviews.mp3
 filelength: 24953736
 duration: 1194 
 explicit: No

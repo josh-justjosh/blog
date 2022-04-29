@@ -1,8 +1,8 @@
 ---
 show: 'Phantom Radio'
 title: 'Breaking News: FCO advises all UK nationals to leave Ukraine'
-artwork: https://www.dropbox.com/s/fv3ahy90c5ontyc/Phantom.jpg?raw=1
-mp3: https://www.dropbox.com/s/kl8r00lxr9haig2/2022-02-11%20-%20Breaking%20News.mp3?raw=1
+artwork: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
+mp3: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/2022-02-11+-+Breaking+News.mp3
 filelength: 1391320
 duration: 51
 explicit: No

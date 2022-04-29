@@ -124,7 +124,7 @@ slletshow:
   author: "Phantom Radio"
   link: https://sllet.co.uk/slletshow
   email: show@sllet.co.uk
-  art: https://www.dropbox.com/s/fi1cge2efs8xx05/SLLET%20radio%20square.png?raw=1
+  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/The+SLLET+Radio+Show/2021-09-27+-+SLLET+radio+square.png
   category: Technology
   copyright: "Phantom Media 2022"
   explicit: "No"
@@ -139,7 +139,7 @@ justkiddin:
   author: "Phantom Radio"
   link: https://blog.josh.me.uk/justkiddin
   email: "justkiddinshow@gmail.com"
-  art: https://www.dropbox.com/s/buh3cg3wnqjh7xy/JK.jpeg?raw=1
+  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Just+Kiddin'/JK.jpeg
   category: "Society &amp; Culture"
   copyright: "Phantom Media 2022"
   explicit: "No"
@@ -154,7 +154,7 @@ totalknockout:
   author: "Phantom Radio"
   link: https://blog.josh.me.uk/totalknockout
   email: "hello@josh.me.uk"
-  art: https://www.dropbox.com/s/fv3ahy90c5ontyc/Phantom.jpg?raw=1
+  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
   category: "Society &amp; Culture"
   copyright: "Phantom Media 2022"
   explicit: "No"

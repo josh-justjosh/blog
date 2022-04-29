@@ -5,7 +5,7 @@ date: 2021-12-09 17:15 +0000
 categories: podcast
 type: "Bonus"
 roles: Continuity Announcer
-mp3: https://www.dropbox.com/s/uh6ixkfrp3sm8is/2021-12-09%20-%20Christmas%20Service.mp3?raw=1
+mp3: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/2021-12-09+-+Christmas+Service.mp3
 youtube: SF_yRHHI3OQ
 show-excerpt: mp3
 filelength: 102142013

@@ -144,9 +144,11 @@ justkiddin:
   copyright: "Phantom Media 2022"
   explicit: "No"
   subtitle: "Join Jess and Kaden as they chat about nothing in particular"
-  complete: yes
+  complete: Yes
   summary: >
     Join Jess and Kaden as they chat about nothing in particular
+    
+    This show finished in February 2022, thanks for listening!
 
 # Total Knockout
 totalknockout:
@@ -160,5 +162,5 @@ totalknockout:
   explicit: "No"
   subtitle: "Join Tom and Kaden as they chat about nothing in particular"
   summary: >
-    == LIVE 7-9 Every Wednesday ==
+    == LIVE 7-9 Every Friday ==
     Join Tom and Kaden as they chat about nothing in particular

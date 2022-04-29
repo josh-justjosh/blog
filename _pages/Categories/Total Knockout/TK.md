@@ -9,11 +9,11 @@ title: "TK: Total Knockout"
   <a href="/totalknockout/rss"><i class="svg-icon rss"></i></a>
   <!--<a href="https://podcasts.apple.com/us/podcast/the-sllet-radio-show/id1587759816"><i class="svg-icon apple-podcasts"></i></a>
   <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82ZDE5MzFkNC9wb2RjYXN0L3Jzcw"><i class="svg-icon google-podcasts"></i></a>-->
-  <a href="https://pca.st/4rww7z18"><i class="svg-icon pocketcasts"></i></a>
+  <a href="https://pca.st/17xn88u9"><i class="svg-icon pocketcasts"></i></a>
   <!--<a href="https://overcast.fm/itunes1587759816"><i class="svg-icon overcast"></i></a>
   <a href="https://open.spotify.com/show/49NzLESoNnQQroy35vPQhW"><i class="svg-icon spotify"></i></a>-->
   <!--<a href="https://www.youtube.com/channel/UClG7zTagAztOx5KhVwPgRVQ"><i class="svg-icon youtube"></i></a>-->
-  <i class="svg-icon"></i>
+  <!--<i class="svg-icon"></i>
   <!--<a href="https://facebook.com/slletshow"><i class="svg-icon facebook"></i></a>
   <a href="https://instagram.com/slletshow"><i class="svg-icon instagram"></i></a>
   <a href="https://twitter.com/slletshow"><i class="svg-icon twitter"></i></a>

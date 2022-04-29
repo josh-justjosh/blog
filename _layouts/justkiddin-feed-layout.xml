@@ -23,7 +23,7 @@ layout: null
       <itunes:name>{{ site.justkiddin.author }}</itunes:name>
       <itunes:email>{{ site.justkiddin.email }}</itunes:email>
     </itunes:owner>
-    <itunes:complete>yes</itunes:complete>
+    <itunes:complete>Yes</itunes:complete>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.categories.justkiddin %}
       {% unless post.hidden == true %}

@@ -5,7 +5,7 @@ title: "The Blog"
 
 <div class="posts">
   {% for post in paginator.posts %}
-    <article style="{% if post.categories contains "live" %}background-color: rgb(255, 85, 85); {% elsif post.categories contains "video" %}background-color: rgb(81, 180, 250); {% elsif post.categories contains "podcast" or post.categories contains "radio" %}background-color: rgb(138, 234, 146); {% elsif post.categories contains "update" %}background-color: rgba(255,128,0,0.25); {% endif %}padding: 1em;" class="post">
+    <article style="{% if post.categories contains "live" %}background-color: rgb(255, 85, 85); {% elsif post.categories contains "video" %}background-color: rgb(81, 180, 250); {% elsif post.categories contains "podcast" or post.categories contains "radio" %}background-color: rgb(138, 234, 146); {% elsif post.categories contains "update" %}background-color: rgba(255,128,0,0.25); {% elsif post.categories contains "parkrun" %}background-color: rgb(62,62,120); {% endif %}padding: 1em;" class="post">
       {% if post.published == false %}
       <div class="post-unpublished">
         <p class="split">Unpublished</p>
@@ -17,7 +17,7 @@ title: "The Blog"
         <div style="grid-column-start: 2; grid-column-end: 4; display: flex; flex-direction: column; height: 100%; justify-content: center;">
       {% endif %}
       <a href="{{ site.baseurl }}{% if post.categories contains "live" %}/live{% else %}{{ post.url }}{% endif %}">
-        <h1 style="margin-top: 0;">{% if post.categories contains "live" and forloop.first == true %}🔴 LIVE 🔴<br />{% endif %}{% if post.categories contains "podcast" or post.categories contains "radio" %}{{post.show}}{% else %}{{ post.title }}{% endif %}</h1>
+        <h1 style="margin-top: 0;{% if post.categories contains "parkrun" %} color: white;{% endif %}">{% if post.categories contains "live" and forloop.first == true %}🔴 LIVE 🔴<br />{% endif %}{% if post.categories contains "podcast" or post.categories contains "radio" %}{{post.show}}{% elsif post.categories contains "parkrun" %}parkrun #{{ post.number }}: {{ post.location }}{% unless post.locnumber == 1 %} #{{ post.locnumber }}{% endunless %}{% else %}{{ post.title }}{% endif %}</h1>
         {% if post.categories contains "podcast" or post.categories contains "radio" %}
           {% assign titlelc = post.title | downcase %}
           {% assign showlc = post.show | downcase %}
@@ -30,6 +30,11 @@ title: "The Blog"
       <div class="post-elsewhere">
         {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
       </div>
+      {% if post.categories contains "parkrun" %}
+      <div>
+      <p style="color:white; text-align:center">{% unless post.pos == nil %}Position:&nbsp;{{ post.pos }}  ·  {% endunless %}{% unless post.genderpos == nil %}Gender Position:&nbsp;{{ post.genderpos }}  ·  {% endunless %}{% unless post.time == nil %}Time:&nbsp;{{ post.time }}  ·  {% endunless %}{% unless post.agegrade == nil %}Age Grade:&nbsp;{{ post.agegrade }}  ·  {% endunless %}<a href="{{ post.locurl }}/results/{{ post.runnumber }}">Full Results</a></p>
+      {% if post.strava != nil %}<a href="https://www.strava.com/activities/{{ post.strava }}"><i class="svg-icon strava"></i></a>{% endif %}
+      </div>{% endif %}
       {% if post.artwork <> Null %}
       <div class="post-roles">
         {% if post %}
@@ -89,7 +94,8 @@ title: "The Blog"
         {{ post.excerpt }}{% endif %}
         <div style="text-align:center">
         <!--{% include youtube.html link=page.youtube %}-->
-      </div>{% else %}
+      </div>{% elsif post.categories contains "parkrun" %}
+      {% else %}
       <div class="entry">
         {{ post.excerpt }}
       </div>
@@ -108,7 +114,7 @@ title: "The Blog"
         {% endfor %}
       </div>
       {% endunless %}
-      {% if post.categories contains "video" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Watch Video</a>{% elsif post.categories contains "podcast" or post.categories contains "radio" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Show Notes</a>{% elsif post.categories contains "live" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
+      {% if post.categories contains "video" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Watch Video</a>{% elsif post.categories contains "podcast" or post.categories contains "radio" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Show Notes</a>{% elsif post.categories contains "live" or "parkrun" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
     </article>
   {% endfor %}
 

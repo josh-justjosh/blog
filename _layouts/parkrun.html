@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article class="page">
+    {% if page.hidden == true %}
+        <div class="post-hidden">
+          <p class="split">This Page is Unlisted</p>
+        </div>
+        {% endif %}
+    <h1>parkrun #{{ page.number }}: {{ page.location }} #{{ page.locnumber }}</h1>
+    {% capture date %}{% if page.last_modified_at %}{{ page.last_modified_at }}{% elsif page.date == Nil %}{{ site.time }}{% else %}{{ page.date }}{% endif %}{% endcapture %}
+    <p class="author_title" id="lastupdated" datetime="{{ date | date_to_xmlschema }}">{% if page.author == Nil %}{{site.author}}{% else %}{{ page.author }}{% endif %}  ·  {{ date | date: "%R %A, %e&nbsp;%B&nbsp;%Y" }}</p>
+    <div class="post-tags">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+    <div style="text-align: center" class="entry">
+      <p>{% unless page.pos == nil %}Position:&nbsp;{{ page.pos }}  ·  {% endunless %}{% unless page.genderpos == nil %}Gender Position:&nbsp;{{ page.genderpos }}  ·  {% endunless %}{% unless page.time == nil %}Time:&nbsp;{{ page.time }}  ·  {% endunless %}{% unless page.agegrade == nil %}Age Grade:&nbsp;{{ page.agegrade }}  ·  {% endunless %}<a href="{{ page.locurl }}/results/{{ page.runnumber }}">Full Results</a></p>
+      <a href="https://www.strava.com/{% if page.strava != nil %}activities/{{ page.strava }}{% else %}athletes/18030772{% endif %}"><i class="svg-icon strava"></i></a>
+      {{ content }}
+    </div>
+  </article>

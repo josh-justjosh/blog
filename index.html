@@ -32,7 +32,7 @@ title: "The Blog"
       </div>
       {% if post.categories contains "parkrun" %}
       <div>
-      <p style="color:white; text-align:center">{% unless post.pos == nil %}Position:&nbsp;{{ post.pos }}  ·  {% endunless %}{% unless post.genderpos == nil %}Gender Position:&nbsp;{{ post.genderpos }}  ·  {% endunless %}{% unless post.time == nil %}Time:&nbsp;{{ post.time }}  ·  {% endunless %}{% unless post.agegrade == nil %}Age Grade:&nbsp;{{ post.agegrade }}  ·  {% endunless %}<a href="{{ post.locurl }}/results/{{ post.runnumber }}">Full Results</a></p>
+      <p style="color:white; text-align:center">{% unless post.pos == nil %}Position:&nbsp;{{ post.pos }}  ·  {% endunless %}{% unless post.genderpos == nil %}Gender Position:&nbsp;{{ post.genderpos }}  ·  {% endunless %}{% unless post.time == nil %}Time:&nbsp;{{ post.time }}  ·  {% endunless %}{% unless post.agegrade == nil %}Age Grade:&nbsp;{{ post.agegrade }}  ·  {% endunless %}<a href="{{ post.locurl }}/results/{{ post.runnumber }}">Full&nbsp;Results</a></p>
       {% if post.strava != nil %}<a href="https://www.strava.com/activities/{{ post.strava }}"><i class="svg-icon strava"></i></a>{% endif %}
       </div>{% endif %}
       {% if post.artwork <> Null %}

@@ -90,6 +90,7 @@ paginate: 10
 paginate_path: /page:num/
 
 timezone: Europe/Dublin
+future: true
 
 defaults:
   - scope:

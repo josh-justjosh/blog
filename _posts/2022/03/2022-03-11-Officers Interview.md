@@ -3,7 +3,7 @@ title: 'Union Elections 2022 - Officers Interview'
 show: 'Phantom Radio'
 categories: video podcast
 youtube: wD4bVgAkz9Y
-roles: ['Executive Producer','Sound','Vision Mixer']
+roles: ['Executive Producer','Sound Engineer','Vision Mixer']
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 artwork: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
 layout: podcast

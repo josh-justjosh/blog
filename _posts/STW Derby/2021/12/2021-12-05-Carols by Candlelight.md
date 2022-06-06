@@ -2,7 +2,7 @@
 layout: post
 title: "Carols by Candlelight"
 date: 2021-12-05 19:00 +0000
-categories: video
+categories: video work
 elsewhere: <a href="https://stwderby.org/">St Werb's Derby</a>
 roles: ["Vision Mixer", "Remote Camera Operator"]
 artwork: https://images.squarespace-cdn.com/content/v1/59897b0a17bffc269e4fec9b/1575027689741-23EFSM1EWOSUABC1BZVK/St+Werburgh%27s+Logo+-+White-Trans.png?format=1500w

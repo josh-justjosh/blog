@@ -24,8 +24,10 @@ layout: default
     </div>
     <div style="text-align: center" class="entry">
       <p>{% unless page.pos == nil %}Position:&nbsp;{{ page.pos }}  ·  {% endunless %}{% unless page.genderpos == nil %}Gender Position:&nbsp;{{ page.genderpos }}  ·  {% endunless %}{% unless page.time == nil %}Time:&nbsp;{{ page.time }}  ·  {% endunless %}{% unless page.agegrade == nil %}Age Grade:&nbsp;{{ page.agegrade }}  ·  {% endunless %}<a href="{{ page.locurl }}/results/{{ page.runnumber }}">Full Results</a></p>
-      {% if page.strava != nil and page.stravaembedcode != nil %}
-      <iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/{{ page.strava }}/embed/{{ page.stravaembedcode }}'></iframe>
+      {% if page.strava != nil %}
+      <div style="display:inline-flex">
+      <div class='strava-embed-placeholder' data-embed-type='activity' data-embed-id='{{ page.strava }}'></div><script style="text-align:center" src='https://strava-embeds.com/embed.js'></script>
+      </div>
       {% else %}
       <a href="https://www.strava.com/{% if page.strava != nil %}activities/{{ page.strava }}{% else %}athletes/18030772{% endif %}"><i class="svg-icon strava"></i></a>
       {% endif %}

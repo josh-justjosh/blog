@@ -6,7 +6,6 @@ episode:
 season: 
 type: "Bonus"
 artwork: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
-people: ['Hosts':['Josh Brunning', 'Dan Jellicoe'], 'Guests':['Anna Alexander','Alex Wood','Serana Storey']]
 mp3: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/2022-06-13+-+End+of+Year+Show.mp3
 filelength: 297135071
 duration: 12987 

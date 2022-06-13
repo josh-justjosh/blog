@@ -10,7 +10,8 @@ mp3: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/2022-06-13+-+End+of+Y
 filelength: 297135071
 duration: 12987 
 explicit: No
-people: ['Hosts':['Dan Jellicoe','Josh Brunning'], 'Guests':['Anna Alexander','Jack Holcombe','Alex Wood','Serana Storey']]
+people: ['Hosts':['<a href="http://www.sllet.co.uk/people/danjellicoe">Dan Jellicoe</a>','<a href="http://www.sllet.co.uk/people/joshbrunning">Josh Brunning</a>'], 'Guests':['<a href="http://www.sllet.co.uk/people/annaalexander">Anna Alexander</a>','<a href="http://www.sllet.co.uk/people/jackholcombe">Jack Holcombe</a>','Alex Wood','Serana Storey']]
+names: ['danjellicoe','joshbrunning','annaalexander','jackholcombe','alexwood','seranastorey']
 
 layout: podcast
 date: 2022-06-13 17:00 +0100

@@ -12,7 +12,7 @@ people: ['Hosts':'Josh Brunning']
 layout: podcast
 date: 2022-02-11 18:35 +0000
 categories: podcast
-elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
+elsewhere: <a href="https://derbyunion.co.uk/sls/media/radio">Phantom Media</a>
 roles: ['Host','Producer']
 tags: ['Phantom Radio']
 ---

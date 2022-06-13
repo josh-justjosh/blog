@@ -5,7 +5,7 @@ people: ['Head of Radio':'Alex Wood','Head of Music':'Anna Alexander','Technical
 layout: post
 date: 2021-09-30
 categories: post
-elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
+elsewhere: <a href="https://derbyunion.co.uk/sls/media/radio">Phantom Media</a>
 roles: "Assistant Technical Manager"
 artwork: https://pbs.twimg.com/profile_images/915197631269408768/wbOWmwcI_400x400.jpg
 tags: ['Phantom Radio']

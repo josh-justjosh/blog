@@ -3,7 +3,7 @@ title: 'Union Elections 2022 - The Results'
 show: 'Phantom Radio'
 categories:  podcast
 roles: ['Continuity Announcer']
-elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
+elsewhere: <a href="https://derbyunion.co.uk/sls/media/radio">Phantom Media</a>
 artwork: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
 layout: podcast
 date: 2022-03-11 19:00 +0000

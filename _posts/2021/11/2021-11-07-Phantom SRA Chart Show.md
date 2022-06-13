@@ -6,7 +6,7 @@ layout: podcast
 type: "Bonus"
 date: 2021-11-07 14:00 +0000
 categories: podcast
-elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
+elsewhere: <a href="https://derbyunion.co.uk/sls/media/radio">Phantom Media</a>
 roles: ['Host', 'Producer']
 artwork: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
 filelength: 82449303

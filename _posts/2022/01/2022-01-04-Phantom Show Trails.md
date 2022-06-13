@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Phantom Show Trails"
+show: "Phantom Radio"
+title: "Show Trails"
 date: 2022-01-04 13:26 +0000
 categories: podcast
 roles: ['Voiceover','Audio Editor']

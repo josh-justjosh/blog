@@ -10,7 +10,7 @@ people: ['Hosts':['Josh Brunning', 'Dan Jellicoe'], 'Guests':['Anna Alexander','
 
 layout: podcast
 date: 2022-06-13 17:00 +0100
-categories: radio video
+categories: radio video live
 elsewhere: <a href="https://phantom-media.co.uk/phantom-radio/">Phantom Media</a>
 roles: ['Host','Producer']
 tags: ['Phantom Radio']

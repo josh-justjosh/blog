@@ -1,6 +1,6 @@
 ---
 show: 'Phantom Radio'
-title: 'The Final Show of the Year'
+title: 'The End of Year Special'
 type: Episode
 episode: 
 season: 

@@ -16,7 +16,6 @@ roles: ['Host','Producer']
 tags: ['Phantom Radio']
 youtube: H_HOZ_x8uUs
 show-excerpt: excerpt+yt
-hidden: true
 ---
 
 {% include phantomlive.html %}

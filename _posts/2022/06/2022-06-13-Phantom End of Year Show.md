@@ -19,7 +19,7 @@ elsewhere: <a href="https://derbyunion.co.uk/sls/media/radio">Phantom Media</a>
 roles: ['Host','Producer']
 tags: ['Phantom Radio']
 youtube: H_HOZ_x8uUs
-show-excerpt: excerpt+yt
+show-excerpt: mp3+yt
 ---
 
 Join Dan, Josh and some special guests for the Phantom Radio End of Year Special.

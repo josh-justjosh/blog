@@ -112,7 +112,7 @@ podcast:
   author: "Josh Brunning"
   link: https://blog.josh.me.uk/
   email: hello@josh.me.uk
-  art: https://blog.josh.me.uk/images/Shared%20Content/trains%20large.jpg
+  art: https://blog.josh.me.uk/images/Shared%20Content/JB.png
   category: Technology
   copyright: "Josh Brunning 2022"
   explicit: "No"
@@ -125,13 +125,12 @@ slletshow:
   author: "Phantom Radio"
   link: https://sllet.co.uk/slletshow
   email: show@sllet.co.uk
-  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/The+SLLET+Radio+Show/2021-09-27+-+SLLET+radio+square.png
+  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/The+SLLET+Radio+Show/SLLET+square.png
   category: Technology
   copyright: "Phantom Media 2022"
   explicit: "No"
   subtitle: "A show by members of Derby's SLLET team on Phantom Radio"
   summary: >
-    == LIVE 4-6 Every Wednesday ==
     A show by members of Derby's SLLET team on Phantom Radio
 
 # Just Kiddin
@@ -162,6 +161,8 @@ totalknockout:
   copyright: "Phantom Media 2022"
   explicit: "No"
   subtitle: "Join Tom and Kaden as they chat about nothing in particular"
+  complete: Yes
   summary: >
-    == LIVE 7-9 Every Friday ==
     Join Tom and Kaden as they chat about nothing in particular
+
+    This show finished in June 2022, thanks for listening!

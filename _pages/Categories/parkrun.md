@@ -1,0 +1,124 @@
+---
+layout: default
+permalink: /parkrun
+title: parkruns
+---
+
+<h1>{{page.title}}</h1>
+<div class="posts">
+  {% for post in site.categories['parkrun'] %}
+    {% unless post.hidden == true %}
+    <article style="{% if post.categories contains "live" %}background-color: rgb(255, 85, 85); {% elsif post.categories contains "video" %}background-color: rgb(81, 180, 250); {% elsif post.categories contains "podcast" or post.categories contains "radio" %}background-color: rgb(138, 234, 146); {% elsif post.categories contains "update" %}background-color: rgba(255,128,0,0.25); {% elsif post.categories contains "parkrun" %}background-color: rgb(62,62,120); {% endif %}padding: 1em;" class="post">
+      {% if post.published == false %}
+      <div class="post-unpublished">
+        <p class="split">Unpublished</p>
+      </div>
+      {% endif %}
+      {% if post.artwork <> Null %}
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); text-align: center; grid-gap: 1rem; margin:15px 0">
+        <div style="display: flex; flex-direction: column; height: 100%; justify-content: center; align-items: center;"><img height=auto width="200" style="vertical-align:middle;" src="{{post.artwork}}"></div>
+        <div style="grid-column-start: 2; grid-column-end: 4; display: flex; flex-direction: column; height: 100%; justify-content: center;">
+      {% endif %}
+      <a href="{{ site.baseurl }}{% if post.categories contains "live" %}/live{% else %}{{ post.url }}{% endif %}">
+        <h1 style="margin-top: 0;{% if post.categories contains "parkrun" %} color: white;{% endif %}">{% if post.categories contains "live" and forloop.first == true %}🔴 LIVE 🔴<br />{% endif %}{% if post.categories contains "podcast" or post.categories contains "radio" %}{{post.show}}{% elsif post.categories contains "parkrun" %}parkrun #{{ post.number }}: {{ post.location }}{% unless post.locnumber == 1 %} #{{ post.locnumber }}{% endunless %}{% else %}{{ post.title }}{% endif %}</h1>
+        {% if post.categories contains "podcast" or post.categories contains "radio" %}
+          {% assign titlelc = post.title | downcase %}
+          {% assign showlc = post.show | downcase %}
+          <h2 style="margin: 0;">{% unless post.season == Null %}Season {{ post.season }}{% endunless %}{% unless post.season == Null or post.episode == Null and titlelc == showlc %}: {% endunless %}{% unless post.episode == Null %}#{{ post.episode }}{% endunless %}{% unless post.episode == Null or titlelc == showlc %} - {% endunless %}{% unless titlelc == showlc %}{{ post.title }}{% endunless %}</h2>
+        {% endif %}
+        {% unless post.categories contains "live" %}<div>
+          <p class="post_date"{% if post.categories contains "video"  %} style="color: white;"{% endif %}>{{ post.date | date: "%e %B %Y" }}</p>
+        </div>{% endunless %}
+      </a>
+      <div class="post-elsewhere">
+        {% if post.elsewhere %}<p style="text-align: center;">🔀 from {{post.elsewhere}}</p>{% endif %}
+      </div>
+      {% if post.categories contains "parkrun" %}
+      <div>
+      <p style="color:white; text-align:center">{% unless post.pos == nil %}Position:&nbsp;{{ post.pos }}  ·  {% endunless %}{% unless post.genderpos == nil %}Gender Position:&nbsp;{{ post.genderpos }}  ·  {% endunless %}{% unless post.time == nil %}Time:&nbsp;{{ post.time }}  ·  {% endunless %}{% unless post.agegrade == nil %}Age Grade:&nbsp;{{ post.agegrade }}  ·  {% endunless %}<a href="{{ post.locurl }}/results/{{ post.runnumber }}">Full&nbsp;Results</a></p>
+      {% if post.strava != nil %}<a href="https://www.strava.com/activities/{{ post.strava }}"><i class="svg-icon strava"></i></a>{% endif %}
+      </div>{% endif %}
+      {% if post.artwork <> Null %}
+      <div class="post-roles">
+        {% if post %}
+          {% assign roles = post.roles %}
+        {% else %}
+          {% assign roles = page.roles %}
+        {% endif %}
+        {% for role in roles %}
+          <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role | replace: " ", "&nbsp;"}}</a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+    {% if post.show-excerpt == 'excerpt' %}
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+    {% elsif post.mp3 <> Null and post.youtube <> Null %}
+    {% if post.show-excerpt == 'excerpt+yt' %}
+    <div class="entry">
+      {{ post.excerpt }}
+      <div style="text-align:center">
+        <!--{% include youtube.html link=page.youtube %}-->
+      </div>
+    </div>
+    {% elsif post.show-excerpt == 'mp3' %}
+    <div style="text-align:center">
+      <audio controls style="width: 75%;">
+        <source src="{{ post.mp3 }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      </div>
+      {% elsif post.show-excerpt == 'youtube' %}<div style="text-align:center">
+        <!--{% include youtube.html link=page.youtube %}-->
+      </div>
+      {% else %}
+      <div style="text-align:center">
+        <audio controls style="width: 75%;">
+          <source src="{{ post.mp3 }}" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <!--{% include youtube.html link=page.youtube %}-->
+      </div>
+      {% endif %}
+     {% else %}
+      {% if post.mp3 <> Null %}
+      <div style="text-align:center">
+      <audio controls style="width: 75%;">
+        <source src="{{ post.mp3 }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      </div>
+      {% elsif post.youtube <> Null %}
+      {% if post.show-excerpt == 'excerpt+yt' %}
+        {{ post.excerpt }}{% endif %}
+        <div style="text-align:center">
+        <!--{% include youtube.html link=page.youtube %}-->
+      </div>{% elsif post.categories contains "parkrun" %}
+      {% else %}
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+      {% endif %}
+      {% endif %}
+      {% unless post.artwork <> Null %}
+      <div class="post-roles">
+        {% if post %}
+          {% assign roles = post.roles %}
+        {% else %}
+          {% assign roles = page.roles %}
+        {% endif %}
+        {% for role in roles %}
+          <a href="{{site.baseurl}}/roles/#{{role|slugize}}">{{role | replace: " ", "&nbsp;"}}</a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+      </div>
+      {% endunless %}
+      {% if post.categories contains "video" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Watch Video</a>{% elsif post.categories contains "podcast" or post.categories contains "radio" %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Show Notes</a>{% elsif post.categories contains "live" or "parkrun" %}{% else %}<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>{% endif %}
+    </article>
+    {% endunless %}
+  {% endfor %}
+</div>

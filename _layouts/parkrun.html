@@ -18,7 +18,11 @@ layout: default
         {% assign categories = page.categories %}
       {% endif %}
       {% for category in categories %}
+        {% if category == "parkrun" %}
+        <a href="{{site.baseurl}}/parkrun">{{category}}</a>
+        {% else %}
         <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+        {% endif %}
         {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
     </div>

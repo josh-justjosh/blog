@@ -1,4 +1,5 @@
 ---
+show: 'The SRA Chart Show'
 title: 'The SRA Chart Show'
 mp3: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/2021-11-07+-+SRA+Chart+Show.mp3
 people: ['Hosts':["Alex Wood", "Josh Brunning"]]

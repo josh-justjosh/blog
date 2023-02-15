@@ -6,7 +6,7 @@ layout: null
 <link href="http://blog.josh.me.uk/" rel="alternate" type="text/html"/>
 <updated>{{ site.time | date_to_xmlschema }}</updated>
 <id>http://blog.josh.me.uk/feed.xml</id>
-<title type="html">{{ site.name }}</title>
+<title type="html">{{ site.title }}</title>
 <subtitle>{{ site.description }}</subtitle>
 <author>
 <name>{{ site.author }}</name>

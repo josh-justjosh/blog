@@ -114,7 +114,7 @@ podcast:
   email: hello@josh.me.uk
   art: https://blog.josh.me.uk/images/Shared%20Content/JB.png
   category: Technology
-  copyright: "Josh Brunning 2022"
+  copyright: "Josh Brunning 2023"
   explicit: "No"
   subtitle: "All of the shows and podcasts Josh has appeared on"
   summary: "All of the shows and podcasts Josh has appeared on"
@@ -127,7 +127,7 @@ slletshow:
   email: show@sllet.co.uk
   art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/The+SLLET+Radio+Show/SLLET+square.png
   category: Technology
-  copyright: "Phantom Media 2022"
+  copyright: "Phantom Media 2023"
   explicit: "No"
   subtitle: "A show by members of Derby's SLLET team on Phantom Radio"
   summary: >

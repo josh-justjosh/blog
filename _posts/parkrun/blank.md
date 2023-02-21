@@ -14,6 +14,6 @@ time: ""
 agegrade: 
 pb: False
 strava: 
-artwork: '/images/Shared Content/parkrun.png'
+artwork: 'https://blog.josh.me.uk/images/Shared Content/parkrun.png'
 published: false
 ---

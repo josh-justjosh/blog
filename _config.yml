@@ -112,7 +112,7 @@ podcast:
   author: "Josh Brunning"
   link: https://blog.josh.me.uk/
   email: hello@josh.me.uk
-  art: https://blog.josh.me.uk/images/Shared%20Content/JB.png
+  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/JB.png
   category: Technology
   copyright: "Josh Brunning 2023"
   explicit: "No"

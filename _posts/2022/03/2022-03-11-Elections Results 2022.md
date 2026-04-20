@@ -4,11 +4,11 @@ show: 'Phantom Radio'
 categories:  podcast
 roles: ['Continuity Announcer']
 elsewhere: <a href="https://derbyunion.co.uk/sls/media/radio">Phantom Media</a>
-artwork: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
+artwork: https://d1cic8f162uu01.cloudfront.net/Phantom/Phantom.jpg
 layout: podcast
 date: 2022-03-11 19:00 +0000
 tags: ['Phantom Radio']
-mp3: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/2022-03-11+-+Election+Results.mp3
+mp3: https://d1cic8f162uu01.cloudfront.net/Phantom/2022-03-11+-+Election+Results.mp3
 filelength: 86649290
 duration: 3567  
 explicit: No

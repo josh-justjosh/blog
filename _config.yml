@@ -112,7 +112,7 @@ podcast:
   author: "Josh Brunning"
   link: https://blog.josh.me.uk/
   email: hello@josh.me.uk
-  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/JB.png
+  art: https://d1cic8f162uu01.cloudfront.net/JB.png
   category: Technology
   copyright: "Josh Brunning 2023"
   explicit: "No"
@@ -125,7 +125,7 @@ slletshow:
   author: "Phantom Radio"
   link: https://sllet.co.uk/slletshow
   email: show@sllet.co.uk
-  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/The+SLLET+Radio+Show/SLLET+square.png
+  art: https://d1cic8f162uu01.cloudfront.net/Phantom/The+SLLET+Radio+Show/SLLET+square.png
   category: Technology
   copyright: "Phantom Media 2023"
   explicit: "No"
@@ -139,7 +139,7 @@ justkiddin:
   author: "Phantom Radio"
   link: https://blog.josh.me.uk/justkiddin
   email: "justkiddinshow@gmail.com"
-  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Just+Kiddin'/JK.jpeg
+  art: https://d1cic8f162uu01.cloudfront.net/Phantom/Just+Kiddin'/JK.jpeg
   category: "Society &amp; Culture"
   copyright: "Phantom Media 2022"
   explicit: "No"
@@ -156,7 +156,7 @@ totalknockout:
   author: "Phantom Radio"
   link: https://blog.josh.me.uk/totalknockout
   email: "hello@josh.me.uk"
-  art: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
+  art: https://d1cic8f162uu01.cloudfront.net/Phantom/Phantom.jpg
   category: "Society &amp; Culture"
   copyright: "Phantom Media 2022"
   explicit: "No"

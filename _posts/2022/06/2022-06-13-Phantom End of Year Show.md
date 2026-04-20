@@ -5,8 +5,8 @@ type: Episode
 episode: 
 season: 
 type: "Bonus"
-artwork: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/Phantom.jpg
-mp3: https://jbpodcasts.s3.eu-west-2.amazonaws.com/Phantom/2022-06-13+-+End+of+Year+Show.mp3
+artwork: https://d1cic8f162uu01.cloudfront.net/Phantom/Phantom.jpg
+mp3: https://d1cic8f162uu01.cloudfront.net/Phantom/2022-06-13+-+End+of+Year+Show.mp3
 filelength: 297135071
 duration: 12987 
 explicit: No
